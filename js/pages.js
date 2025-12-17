@@ -4,11 +4,10 @@
  */
 
 window.PAGES = {
-
   "dashboard": {
     title: "Dashboard Overview",
     subtitle: "Welcome back! Here's what's happening today.",
-    content: \`<div id="stats-grid" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<div id="stats-grid" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -443,13 +442,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "billing": {
     title: "Billing & Payments",
     subtitle: "Manage invoices, payments, and billing cycles.",
-    content: \`<div id="payment-stats" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="payment-stats" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -985,13 +984,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "defaulters": {
     title: "Payment Defaulters",
     subtitle: "Track and manage overdue payments and defaulters.",
-    content: \`<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -1598,13 +1597,13 @@ window.PAGES = {
           <p class="text-sm text-neutral-500 mb-4">Customize automated actions and escalation timelines for defaulters</p>
           <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Settings</button>
         </div>
-      </div>\`
+      </div>`
   },
 
   "reconciliation": {
     title: "Reconciliation",
     subtitle: "Match and reconcile transactions with bank statements.",
-    content: \`<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -2349,13 +2348,13 @@ window.PAGES = {
           <p class="text-sm text-neutral-500 mb-4">Access previous reconciliation records and reports</p>
           <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">View History</button>
         </div>
-      </div>\`
+      </div>`
   },
 
   "reports": {
     title: "Reports",
     subtitle: "Generate and view financial and operational reports.",
-    content: \`<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -2773,13 +2772,13 @@ window.PAGES = {
             class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Share
             Access</button>
         </div>
-      </div>\`
+      </div>`
   },
 
   "audit-logs": {
     title: "Audit Logs",
     subtitle: "View system activity and audit trail.",
-    content: \`<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -3525,13 +3524,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "complaints": {
     title: "Complaints Management",
     subtitle: "Track and resolve resident complaints and issues.",
-    content: \`<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -4470,13 +4469,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "vendors": {
     title: "Vendor Management",
     subtitle: "Manage vendors, contracts, and service agreements.",
-    content: \`<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -5446,13 +5445,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "vendor-workforce": {
     title: "Vendor Workforce",
     subtitle: "Track vendor employees and their assignments.",
-    content: \`<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -6535,13 +6534,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "attendance": {
     title: "Attendance Tracking",
     subtitle: "Monitor staff and vendor attendance records.",
-    content: \`<div id="stats-section" class="grid grid-cols-6 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-6 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -7588,13 +7587,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "residents": {
     title: "Residents Directory",
     subtitle: "Manage resident information and unit occupancy.",
-    content: \`<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -8547,13 +8546,13 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "users-roles": {
     title: "Users & Roles",
     subtitle: "Manage user accounts and access permissions.",
-    content: \`<div id="society-info-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
+    content: `<div id="society-info-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
         <div class="flex items-center justify-between mb-6">
           <div>
             <h3 class="text-lg text-neutral-900">Society Configuration</h3>
@@ -9473,7 +9472,7 @@ window.PAGES = {
             </div>
           </div>
         </div>
-      </div>\`
+      </div>`
   },
 
   "security": {
