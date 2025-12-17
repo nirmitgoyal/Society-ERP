@@ -56,7 +56,7 @@ window.PAGES = {
               class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">94.2%</span>
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">156/165</h3>
-          <p class="text-sm text-neutral-500">Units Paid</p>
+          <p class="text-sm text-neutral-500">Units Paid (MTD)</p>
         </div>
       </div>
       <div id="content-grid" class="grid grid-cols-3 gap-6 mb-8">
@@ -66,8 +66,8 @@ window.PAGES = {
             <h3 class="text-lg text-neutral-900">Recent Transactions</h3><button
               class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1"><span>View
                 All</span><i
-                class="fa-solid fa-arrow-right text-xs"></i></button>
-          </div>
+                class="fa-solid fa-arrow-right text-xs"></i>
+          </button></div>
           <div class="space-y-4">
             <div
               class="flex items-center justify-between py-3 border-b border-neutral-100">
@@ -257,8 +257,8 @@ window.PAGES = {
             <h3 class="text-lg text-neutral-900">Payment Defaulters</h3><button
               class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1"><span>Send
                 Reminders</span><i
-                class="fa-solid fa-paper-plane text-xs"></i></button>
-          </div>
+                class="fa-solid fa-paper-plane text-xs"></i>
+          </button></div>
           <div class="overflow-x-auto">
             <table class="w-full">
               <thead>
@@ -296,7 +296,7 @@ window.PAGES = {
                       days</span></td>
                   <td class="py-3 px-2"><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        class="fa-solid fa-ellipsis-vertical"></i></td>
                 </tr>
                 <tr class="border-b border-neutral-100">
                   <td class="py-3 px-2 text-sm text-neutral-900">B-201</td>
@@ -313,7 +313,7 @@ window.PAGES = {
                       days</span></td>
                   <td class="py-3 px-2"><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        class="fa-solid fa-ellipsis-vertical"></i></td>
                 </tr>
                 <tr class="border-b border-neutral-100">
                   <td class="py-3 px-2 text-sm text-neutral-900">C-308</td>
@@ -329,7 +329,7 @@ window.PAGES = {
                       days</span></td>
                   <td class="py-3 px-2"><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        class="fa-solid fa-ellipsis-vertical"></i></td>
                 </tr>
                 <tr class="border-b border-neutral-100">
                   <td class="py-3 px-2 text-sm text-neutral-900">D-102</td>
@@ -346,7 +346,7 @@ window.PAGES = {
                       days</span></td>
                   <td class="py-3 px-2"><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        class="fa-solid fa-ellipsis-vertical"></i></td>
                 </tr>
               </tbody>
             </table>
@@ -356,8 +356,8 @@ window.PAGES = {
           <div class="flex items-center justify-between mb-6">
             <h3 class="text-lg text-neutral-900">Vendor Workforce Status</h3>
             <button class="text-sm text-neutral-600 hover:text-neutral-900">View
-              All</button>
-          </div>
+              All
+          </button></div>
           <div class="space-y-4">
             <div
               class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
@@ -511,8 +511,8 @@ window.PAGES = {
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-lg text-neutral-900">Filters &amp; Actions</h3><button
             class="text-sm text-neutral-600 hover:text-neutral-900">Clear
-            All</button>
-        </div>
+            All
+        </button></div>
         <div class="grid grid-cols-6 gap-4">
           <div><label class="block text-xs text-neutral-600 mb-2">Date
               Range</label><select
@@ -666,8 +666,8 @@ window.PAGES = {
                       class="p-2 text-neutral-600 hover:bg-neutral-100 rounded"><i
                         class="fa-solid fa-download"></i></button><button
                       class="p-2 text-neutral-600 hover:bg-neutral-100 rounded"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="border-b border-neutral-100 hover:bg-neutral-50">
@@ -719,8 +719,8 @@ window.PAGES = {
                       class="p-2 text-neutral-600 hover:bg-neutral-100 rounded"><i
                         class="fa-solid fa-download"></i></button><button
                       class="p-2 text-neutral-600 hover:bg-neutral-100 rounded"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -752,8 +752,8 @@ window.PAGES = {
           </div><button
             class="px-4 py-2 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800 flex items-center gap-2"><i
               class="fa-solid fa-sync"></i><span class="text-sm">Sync All
-              Pending</span></button>
-        </div>
+              Pending</span>
+        </button></div>
         <div class="grid grid-cols-4 gap-4 mb-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
             <div class="flex items-center gap-3 mb-2">
@@ -830,8 +830,8 @@ window.PAGES = {
         <div class="flex items-center justify-between mb-6">
           <h3 class="text-lg text-neutral-900">Collection Personnel Details</h3>
           <button class="text-sm text-neutral-600 hover:text-neutral-900">View
-            All Staff</button>
-        </div>
+            All Staff
+        </button></div>
         <div class="space-y-4">
           <div class="p-4 border border-neutral-200 rounded-lg">
             <div class="flex items-center justify-between">
@@ -889,8 +889,8 @@ window.PAGES = {
         <div class="flex items-center justify-between mb-6">
           <h3 class="text-lg text-neutral-900">Invoice Application Details</h3>
           <button class="text-sm text-neutral-600 hover:text-neutral-900">View
-            All Invoices</button>
-        </div>
+            All Invoices
+        </button></div>
         <div class="overflow-x-auto">
           <table class="w-full">
             <thead class="bg-neutral-50 border-b border-neutral-200">
@@ -940,8 +940,8 @@ window.PAGES = {
           <h3 class="text-lg text-neutral-900">Payment Attachments &amp;
             Documents</h3><button
             class="text-sm text-neutral-600 hover:text-neutral-900">Manage
-            Documents</button>
-        </div>
+            Documents
+        </button></div>
         <div class="grid grid-cols-3 gap-4">
           <div class="border border-neutral-200 rounded-lg p-4">
             <div class="flex items-center gap-3 mb-3">
@@ -1045,7 +1045,7 @@ window.PAGES = {
             <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
               <span>Export</span>
               <i class="fa-solid fa-download text-xs"></i>
-            </button>
+            
           </div>
           <div class="space-y-4">
             <div class="p-4 border border-neutral-200 rounded-lg">
@@ -1100,7 +1100,7 @@ window.PAGES = {
             <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
               <i class="fa-solid fa-gear text-xs"></i>
               <span>Configure</span>
-            </button>
+            
           </div>
           <div class="space-y-4">
             <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
@@ -1182,7 +1182,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-filter"></i>
               <span>Filter</span>
-            </button>
+            
           </div>
         </div>
 
@@ -1237,14 +1237,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1281,14 +1281,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1325,14 +1325,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1369,14 +1369,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1413,14 +1413,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1457,14 +1457,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1501,14 +1501,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
 
@@ -1545,14 +1545,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="p-1 text-neutral-600 hover:text-neutral-900" title="Send Reminder">
                       <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                       <i class="fa-solid fa-eye text-sm"></i>
-                    </button>
-                    <button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
+                    
+                    </button><button class="p-1 text-neutral-600 hover:text-neutral-900" title="More Options">
                       <i class="fa-solid fa-ellipsis-vertical text-sm"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -1562,12 +1562,12 @@ window.PAGES = {
         <div class="flex items-center justify-between mt-6 pt-4 border-t border-neutral-200">
           <p class="text-sm text-neutral-600">Showing 8 of 12 defaulters</p>
           <div class="flex items-center gap-2">
-            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Previous</button>
-            <button class="px-3 py-1 bg-neutral-900 text-white rounded text-sm">1</button>
-            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">2</button>
-            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Next</button>
+            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Previous
+            </button><button class="px-3 py-1 bg-neutral-900 text-white rounded text-sm">1
+            </button><button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">2
+            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Next
           </div>
-        </div>
+        </button></div>
       </div>
 
       <div id="actions-section" class="grid grid-cols-3 gap-6 mb-8">
@@ -1577,8 +1577,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">Send Bulk Reminders</h3>
           <p class="text-sm text-neutral-500 mb-4">Send payment reminders to all selected defaulters via SMS and email</p>
-          <button class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Send Reminders</button>
-        </div>
+          <button class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Send Reminders
+        </button></div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -1586,8 +1586,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">Export Defaulter Report</h3>
           <p class="text-sm text-neutral-500 mb-4">Download detailed report of all defaulters with payment history</p>
-          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Export PDF</button>
-        </div>
+          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Export PDF
+        </button></div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -1595,8 +1595,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">Configure Actions</h3>
           <p class="text-sm text-neutral-500 mb-4">Customize automated actions and escalation timelines for defaulters</p>
-          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Settings</button>
-        </div>
+          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Settings
+        </button></div>
       </div>`
   },
 
@@ -1675,11 +1675,11 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-download"></i>
               <span>Export Report</span>
-            </button>
+            
             <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
               <i class="fa-solid fa-sync"></i>
               <span>Sync to SAP</span>
-            </button>
+            
           </div>
         </div>
       </div>
@@ -1689,18 +1689,18 @@ window.PAGES = {
           <div class="flex items-center gap-1 px-6">
             <button class="px-4 py-3 text-sm text-neutral-900 border-b-2 border-neutral-900">
               Exceptions (4)
-            </button>
-            <button class="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900">
+            
+            </button><button class="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900">
               Matched Transactions (215)
-            </button>
-            <button class="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900">
+            
+            </button><button class="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900">
               History
-            </button>
+            
             <button class="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900">
               Settings
-            </button>
+            
           </div>
-        </div>
+        </button></div>
 
         <div class="p-6">
           <div class="flex items-center justify-between mb-6">
@@ -1766,19 +1766,19 @@ window.PAGES = {
                 <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                   <i class="fa-solid fa-upload"></i>
                   <span>Upload Receipt</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-check"></i>
                   <span>Mark Resolved</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-user-plus"></i>
                   <span>Reassign</span>
-                </button>
+                
                 <button class="ml-auto p-2 text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
 
             <div class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
@@ -1822,19 +1822,19 @@ window.PAGES = {
                 <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                   <i class="fa-solid fa-edit"></i>
                   <span>Adjust Amount</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-eye"></i>
                   <span>View Details</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-comment"></i>
                   <span>Add Note</span>
-                </button>
+                
                 <button class="ml-auto p-2 text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
 
             <div class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
@@ -1879,19 +1879,19 @@ window.PAGES = {
                 <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                   <i class="fa-solid fa-user-plus"></i>
                   <span>Assign</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-link"></i>
                   <span>Link Reference</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-eye"></i>
                   <span>View Details</span>
-                </button>
+                
                 <button class="ml-auto p-2 text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
 
             <div class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
@@ -1936,19 +1936,19 @@ window.PAGES = {
                 <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                   <i class="fa-solid fa-user-plus"></i>
                   <span>Assign</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-code-compare"></i>
                   <span>Compare Entries</span>
-                </button>
+                
                 <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                   <i class="fa-solid fa-trash"></i>
                   <span>Remove Duplicate</span>
-                </button>
+                
                 <button class="ml-auto p-2 text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
           </div>
         </div>
@@ -1963,7 +1963,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
             <span>View All</span>
             <i class="fa-solid fa-arrow-right text-xs"></i>
-          </button>
+          
         </div>
 
         <div class="overflow-x-auto">
@@ -2006,7 +2006,7 @@ window.PAGES = {
                 <td class="py-4 px-4">
                   <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                     <i class="fa-solid fa-eye text-sm"></i>
-                  </button>
+                  
                 </td>
               </tr>
 
@@ -2035,7 +2035,7 @@ window.PAGES = {
                 <td class="py-4 px-4">
                   <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                     <i class="fa-solid fa-eye text-sm"></i>
-                  </button>
+                  
                 </td>
               </tr>
 
@@ -2064,7 +2064,7 @@ window.PAGES = {
                 <td class="py-4 px-4">
                   <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                     <i class="fa-solid fa-eye text-sm"></i>
-                  </button>
+                  
                 </td>
               </tr>
 
@@ -2093,7 +2093,7 @@ window.PAGES = {
                 <td class="py-4 px-4">
                   <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                     <i class="fa-solid fa-eye text-sm"></i>
-                  </button>
+                  
                 </td>
               </tr>
 
@@ -2122,7 +2122,7 @@ window.PAGES = {
                 <td class="py-4 px-4">
                   <button class="p-1 text-neutral-600 hover:text-neutral-900" title="View Details">
                     <i class="fa-solid fa-eye text-sm"></i>
-                  </button>
+                  
                 </td>
               </tr>
             </tbody>
@@ -2189,7 +2189,7 @@ window.PAGES = {
           <button class="w-full mt-6 px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center justify-center gap-2">
             <i class="fa-solid fa-sync"></i>
             <span>Sync Now</span>
-          </button>
+          
         </div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
@@ -2198,7 +2198,7 @@ window.PAGES = {
             <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
               <i class="fa-solid fa-gear text-xs"></i>
               <span>Configure</span>
-            </button>
+            
           </div>
 
           <div class="space-y-4">
@@ -2260,7 +2260,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
             <span>View All</span>
             <i class="fa-solid fa-arrow-right text-xs"></i>
-          </button>
+          
         </div>
 
         <div class="space-y-4">
@@ -2328,8 +2328,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">Import New Statement</h3>
           <p class="text-sm text-neutral-500 mb-4">Upload bank statement for automatic reconciliation</p>
-          <button class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Import Statement</button>
-        </div>
+          <button class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Import Statement
+        </button></div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -2337,8 +2337,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">Export Report</h3>
           <p class="text-sm text-neutral-500 mb-4">Download detailed reconciliation report as PDF</p>
-          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Export PDF</button>
-        </div>
+          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Export PDF
+        </button></div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -2346,8 +2346,8 @@ window.PAGES = {
           </div>
           <h3 class="text-lg text-neutral-900 mb-2">View History</h3>
           <p class="text-sm text-neutral-500 mb-4">Access previous reconciliation records and reports</p>
-          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">View History</button>
-        </div>
+          <button class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">View History
+        </button></div>
       </div>`
   },
 
@@ -2412,8 +2412,8 @@ window.PAGES = {
           </div><button
             class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2"><i
               class="fa-solid fa-gear text-xs"></i><span>Configure
-              Templates</span></button>
-        </div>
+              Templates</span>
+        </button></div>
         <div class="grid grid-cols-2 gap-6">
           <div
             class="border border-neutral-200 rounded-lg p-6 hover:border-neutral-300 transition-colors">
@@ -2535,8 +2535,8 @@ window.PAGES = {
           <div class="flex items-center justify-between mb-6">
             <h3 class="text-lg text-neutral-900">CSV Export Settings</h3><button
               class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1"><i
-                class="fa-solid fa-pen text-xs"></i><span>Edit</span></button>
-          </div>
+                class="fa-solid fa-pen text-xs"></i><span>Edit</span>
+          </button></div>
           <div class="space-y-4">
             <div class="p-4 border border-neutral-200 rounded-lg">
               <div class="flex items-center justify-between mb-2">
@@ -2594,8 +2594,8 @@ window.PAGES = {
               and delivery</p>
           </div><button
             class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
-              class="fa-solid fa-plus"></i><span>Add Schedule</span></button>
-        </div>
+              class="fa-solid fa-plus"></i><span>Add Schedule</span>
+        </button></div>
         <div class="space-y-4">
           <div
             class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
@@ -2748,8 +2748,8 @@ window.PAGES = {
           <p class="text-sm text-neutral-500 mb-4">Create custom reports with
             advanced filters</p><button
             class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Build
-            Report</button>
-        </div>
+            Report
+        </button></div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div
             class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -2759,8 +2759,8 @@ window.PAGES = {
           <p class="text-sm text-neutral-500 mb-4">Upload custom report template
             files</p><button
             class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Import
-            Template</button>
-        </div>
+            Template
+        </button></div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div
             class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
@@ -2770,8 +2770,8 @@ window.PAGES = {
           <p class="text-sm text-neutral-500 mb-4">Share reports with committee
             members</p><button
             class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Share
-            Access</button>
-        </div>
+            Access
+        </button></div>
       </div>`
   },
 
@@ -2829,7 +2829,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
             <i class="fa-solid fa-rotate-left text-xs"></i>
             <span>Reset Filters</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-5 gap-4">
           <div>
@@ -2877,11 +2877,11 @@ window.PAGES = {
           <button class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-magnifying-glass"></i>
             <span>Apply Filters</span>
-          </button>
+          
           <button class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button>
-        </div>
+          
+        </button></div>
       </div>
       <div id="logs-table-section" class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -2894,11 +2894,11 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-csv"></i>
                 <span>Export CSV</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-pdf"></i>
                 <span>Export PDF</span>
-              </button>
+              
             </div>
           </div>
         </div>
@@ -2960,7 +2960,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3004,7 +3004,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3046,7 +3046,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3088,7 +3088,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3130,7 +3130,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3172,7 +3172,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3214,7 +3214,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3258,7 +3258,7 @@ window.PAGES = {
                 <td class="px-6 py-4">
                   <button class="text-neutral-600 hover:text-neutral-900">
                     <i class="fa-solid fa-eye"></i>
-                  </button>
+                  
                 </td>
               </tr>
             </tbody>
@@ -3269,16 +3269,16 @@ window.PAGES = {
           <div class="flex items-center gap-2">
             <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 disabled:opacity-50 disabled:cursor-not-allowed">
               <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3</button>
+            
+            </button><button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3
             <span class="px-3 py-2 text-sm text-neutral-600">...</span>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">356</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">356
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
               <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+            
+          </button></div>
         </div>
       </div>
       <div id="activity-timeline-section" class="grid grid-cols-3 gap-6 mb-8">
@@ -3291,7 +3291,7 @@ window.PAGES = {
             <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
               <i class="fa-solid fa-arrows-rotate text-xs"></i>
               <span>Refresh</span>
-            </button>
+            
           </div>
           <div class="space-y-6">
             <div class="flex gap-4">
@@ -3439,7 +3439,7 @@ window.PAGES = {
           <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-floppy-disk"></i>
             <span>Save Settings</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-2 gap-6">
           <div class="space-y-4">
@@ -3655,7 +3655,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
             <i class="fa-solid fa-rotate-left text-xs"></i>
             <span>Reset Filters</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-6 gap-4">
           <div>
@@ -3708,11 +3708,11 @@ window.PAGES = {
           <button class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-magnifying-glass"></i>
             <span>Apply Filters</span>
-          </button>
+          
           <button class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button>
-        </div>
+          
+        </button></div>
       </div>
       <div id="complaints-table-section" class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -3725,11 +3725,11 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-download"></i>
                 <span>Export</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-print"></i>
                 <span>Print</span>
-              </button>
+              
             </div>
           </div>
         </div>
@@ -3802,11 +3802,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3858,11 +3858,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3914,11 +3914,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -3969,11 +3969,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4025,11 +4025,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4081,11 +4081,11 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -4096,15 +4096,15 @@ window.PAGES = {
           <div class="flex items-center gap-2">
             <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 disabled:opacity-50 disabled:cursor-not-allowed">
               <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">4</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+            
+            </button><button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">4
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
               <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+            
+          </button></div>
         </div>
       </div>
       <div id="escalation-section" class="grid grid-cols-3 gap-6 mb-8">
@@ -4117,7 +4117,7 @@ window.PAGES = {
             <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
               <i class="fa-solid fa-gear text-xs"></i>
               <span>Configure</span>
-            </button>
+            
           </div>
           <div class="space-y-6">
             <div class="flex gap-4">
@@ -4224,7 +4224,7 @@ window.PAGES = {
           <button class="w-full mt-6 px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center justify-center gap-2">
             <i class="fa-solid fa-edit"></i>
             <span>Edit SLA Settings</span>
-          </button>
+          
         </div>
       </div>
       <div id="complaint-details-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
@@ -4237,11 +4237,11 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-print"></i>
               <span>Print</span>
-            </button>
+            
             <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
               <i class="fa-solid fa-check"></i>
               <span>Mark Resolved</span>
-            </button>
+            
           </div>
         </div>
         <div class="grid grid-cols-2 gap-8">
@@ -4291,8 +4291,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-download"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
           </div>
           <div class="space-y-6">
@@ -4306,8 +4306,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-phone"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
             <div>
               <h4 class="text-sm text-neutral-900 mb-4">Assignment</h4>
@@ -4370,7 +4370,7 @@ window.PAGES = {
           <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-floppy-disk"></i>
             <span>Save Settings</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-3 gap-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
@@ -4605,8 +4605,8 @@ window.PAGES = {
           <h3 class="text-lg text-neutral-900">Filter Vendors</h3><button
             class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2"><i
               class="fa-solid fa-rotate-left text-xs"></i><span>Reset
-              Filters</span></button>
-        </div>
+              Filters</span>
+        </button></div>
         <div class="grid grid-cols-5 gap-4">
           <div><label
               class="block text-sm text-neutral-700 mb-2">Category</label><select
@@ -4654,11 +4654,11 @@ window.PAGES = {
         <div class="flex items-center gap-3 mt-6"><button
             class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
               class="fa-solid fa-magnifying-glass"></i><span>Apply
-              Filters</span></button><button
+              Filters</span><button
             class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button></div>
-      </div>
+          </div>
+      </button></div>
       <div id="vendors-table-section"
         class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -4672,8 +4672,8 @@ window.PAGES = {
                 class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2"><i
                   class="fa-solid fa-download"></i><span>Export</span></button><button
                 class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2"><i
-                  class="fa-solid fa-print"></i><span>Print</span></button>
-            </div>
+                  class="fa-solid fa-print"></i><span>Print</span>
+            </button></div>
           </div>
         </div>
         <div class="overflow-x-auto">
@@ -4762,8 +4762,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4812,8 +4812,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4868,8 +4868,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4925,8 +4925,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -4982,8 +4982,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -5032,8 +5032,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -5204,8 +5204,8 @@ window.PAGES = {
               </div><button class="text-neutral-600 hover:text-neutral-900"><i
                   class="fa-solid fa-phone"></i></button><button
                 class="text-neutral-600 hover:text-neutral-900"><i
-                  class="fa-solid fa-envelope"></i></button>
-            </div>
+                  class="fa-solid fa-envelope"></i>
+            </button></div>
           </div>
         </div>
         <div class="space-y-6">
@@ -5221,8 +5221,8 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">Contract Agreement</p>
                   <p class="text-xs text-neutral-500">PDF • 1.2 MB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
                 <div
@@ -5232,8 +5232,8 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">Tax Documents</p>
                   <p class="text-xs text-neutral-500">PDF • 856 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
                 <div
@@ -5243,13 +5243,13 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">Insurance Certificate</p>
                   <p class="text-xs text-neutral-500">PDF • 645 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
             </div><button
               class="w-full mt-4 px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center justify-center gap-2"><i
                 class="fa-solid fa-upload"></i><span>Upload
-                Document</span></button>
-          </div>
+                Document</span>
+          </button></div>
         </div>
       </div>
       <div id="sap-integration-section"
@@ -5262,8 +5262,8 @@ window.PAGES = {
           </div><button
             class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
               class="fa-solid fa-sync"></i><span>Sync All
-              Vendors</span></button>
-        </div>
+              Vendors</span>
+        </button></div>
         <div class="grid grid-cols-4 gap-6 mb-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
             <div class="flex items-center justify-between mb-3">
@@ -5350,7 +5350,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-sync"></i> Sync Now
-                  </button></td>
+                  </td>
               </tr>
               <tr class="hover:bg-neutral-50">
                 <td class="px-6 py-4">
@@ -5370,7 +5370,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-sync"></i> Sync Now
-                  </button></td>
+                  </td>
               </tr>
               <tr class="hover:bg-neutral-50">
                 <td class="px-6 py-4">
@@ -5390,7 +5390,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-link"></i> Link SAP ID
-                  </button></td>
+                  </td>
               </tr>
             </tbody>
           </table>
@@ -5414,8 +5414,8 @@ window.PAGES = {
                 Order</span></button><button
               class="p-4 border border-neutral-300 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2"><i
                 class="fa-solid fa-star text-2xl text-neutral-600"></i><span
-                class="text-sm text-neutral-900">Rate Service</span></button>
-          </div>
+                class="text-sm text-neutral-900">Rate Service</span>
+          </button></div>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <h3 class="text-lg text-neutral-900 mb-6">Payment Summary</h3>
@@ -5606,8 +5606,8 @@ window.PAGES = {
           <h3 class="text-lg text-neutral-900">Filter Workforce</h3><button
             class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2"><i
               class="fa-solid fa-rotate-left text-xs"></i><span>Reset
-              Filters</span></button>
-        </div>
+              Filters</span>
+        </button></div>
         <div class="grid grid-cols-6 gap-4">
           <div><label
               class="block text-sm text-neutral-700 mb-2">Vendor</label><select
@@ -5663,11 +5663,11 @@ window.PAGES = {
         <div class="flex items-center gap-3 mt-6"><button
             class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
               class="fa-solid fa-magnifying-glass"></i><span>Apply
-              Filters</span></button><button
+              Filters</span><button
             class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button></div>
-      </div>
+          </div>
+      </button></div>
       <div id="workforce-table-section"
         class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -5684,8 +5684,8 @@ window.PAGES = {
                   class="fa-solid fa-fingerprint"></i><span>Bulk
                   Enroll</span></button><button
                 class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2"><i
-                  class="fa-solid fa-print"></i><span>Print</span></button>
-            </div>
+                  class="fa-solid fa-print"></i><span>Print</span>
+            </button></div>
           </div>
         </div>
         <div class="overflow-x-auto">
@@ -5772,8 +5772,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -5825,8 +5825,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -5879,8 +5879,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -5932,8 +5932,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -5985,8 +5985,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -6038,8 +6038,8 @@ window.PAGES = {
                       class="text-neutral-600 hover:text-neutral-900"><i
                         class="fa-solid fa-edit"></i></button><button
                       class="text-neutral-600 hover:text-neutral-900"><i
-                        class="fa-solid fa-ellipsis-vertical"></i></button>
-                  </div>
+                        class="fa-solid fa-ellipsis-vertical"></i>
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -6276,8 +6276,8 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">ID Proof</p>
                   <p class="text-xs text-neutral-500">PDF • 842 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
                 <div
@@ -6287,8 +6287,8 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">Police Verification</p>
                   <p class="text-xs text-neutral-500">PDF • 1.1 MB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
                 <div
@@ -6298,13 +6298,13 @@ window.PAGES = {
                   <p class="text-sm text-neutral-900">Training Certificate</p>
                   <p class="text-xs text-neutral-500">PDF • 645 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
-                    class="fa-solid fa-download"></i></button>
-              </div>
+                    class="fa-solid fa-download"></i>
+              </button></div>
             </div><button
               class="w-full mt-4 px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center justify-center gap-2"><i
                 class="fa-solid fa-upload"></i><span>Upload
-                Document</span></button>
-          </div>
+                Document</span>
+          </button></div>
         </div>
       </div>
       <div id="biometric-section"
@@ -6318,8 +6318,8 @@ window.PAGES = {
           </div><button
             class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
               class="fa-solid fa-fingerprint"></i><span>Bulk
-              Enroll</span></button>
-        </div>
+              Enroll</span>
+        </button></div>
         <div class="grid grid-cols-4 gap-6 mb-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
             <div class="flex items-center justify-between mb-3">
@@ -6421,7 +6421,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-sync"></i> Re-enroll
-                  </button></td>
+                  </td>
               </tr>
               <tr class="hover:bg-neutral-50">
                 <td class="px-6 py-4">
@@ -6450,7 +6450,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-sync"></i> Re-enroll
-                  </button></td>
+                  </td>
               </tr>
               <tr class="hover:bg-neutral-50">
                 <td class="px-6 py-4">
@@ -6479,7 +6479,7 @@ window.PAGES = {
                 <td class="px-6 py-4"><button
                     class="text-neutral-600 hover:text-neutral-900 text-sm"><i
                       class="fa-solid fa-sync"></i> Re-enroll
-                  </button></td>
+                  </td>
               </tr>
             </tbody>
           </table>
@@ -6503,8 +6503,8 @@ window.PAGES = {
                 Task</span></button><button
               class="p-4 border border-neutral-300 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2"><i
                 class="fa-solid fa-calendar-check text-2xl text-neutral-600"></i><span
-                class="text-sm text-neutral-900">View Attendance</span></button>
-          </div>
+                class="text-sm text-neutral-900">View Attendance</span>
+          </button></div>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <h3 class="text-lg text-neutral-900 mb-6">Today's Summary</h3>
@@ -6617,7 +6617,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-rotate"></i>
               <span>Refresh</span>
-            </button>
+            
           </div>
         </div>
         <div class="space-y-3">
@@ -6683,7 +6683,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
             <i class="fa-solid fa-rotate-left text-xs"></i>
             <span>Reset Filters</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-5 gap-4">
           <div>
@@ -6743,11 +6743,11 @@ window.PAGES = {
           <button class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-magnifying-glass"></i>
             <span>Apply Filters</span>
-          </button>
+          
           <button class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button>
-        </div>
+          
+        </button></div>
       </div>
       <div id="attendance-table-section" class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -6760,15 +6760,15 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-download"></i>
                 <span>Export CSV</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-pdf"></i>
                 <span>Export PDF</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-print"></i>
                 <span>Print</span>
-              </button>
+              
             </div>
           </div>
         </div>
@@ -6843,14 +6843,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50 bg-neutral-50">
@@ -6903,14 +6903,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -6963,14 +6963,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -7023,14 +7023,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -7083,14 +7083,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -7143,14 +7143,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -7161,16 +7161,16 @@ window.PAGES = {
           <div class="flex items-center gap-2">
             <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 disabled:opacity-50 disabled:cursor-not-allowed">
               <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">...</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">24</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+            
+            </button><button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">...
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">24
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
               <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+            
+          </button></div>
         </div>
       </div>
       <div id="alerts-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
@@ -7182,7 +7182,7 @@ window.PAGES = {
           <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
             <i class="fa-solid fa-check-double"></i>
             <span>Mark All Reviewed</span>
-          </button>
+          
         </div>
         <div class="space-y-4">
           <div class="p-4 border border-neutral-300 rounded-lg bg-neutral-50">
@@ -7214,15 +7214,15 @@ window.PAGES = {
                   <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                     <i class="fa-solid fa-check"></i>
                     <span>Verify & Close</span>
-                  </button>
+                  
                   <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                     <i class="fa-solid fa-pen"></i>
                     <span>Add Manual Entry</span>
-                  </button>
+                  
                   <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                     <i class="fa-solid fa-comment"></i>
                     <span>Add Note</span>
-                  </button>
+                  
                 </div>
               </div>
             </div>
@@ -7252,15 +7252,15 @@ window.PAGES = {
                   <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                     <i class="fa-solid fa-bell"></i>
                     <span>Send Warning</span>
-                  </button>
+                  
                   <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>View History</span>
-                  </button>
+                  
                   <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
                     Dismiss
-                  </button>
-                </div>
+                  
+                </button></div>
               </div>
             </div>
           </div>
@@ -7289,11 +7289,11 @@ window.PAGES = {
                   <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
                     <i class="fa-solid fa-wrench"></i>
                     <span>Schedule Maintenance</span>
-                  </button>
+                  
                   <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
                     Dismiss
-                  </button>
-                </div>
+                  
+                </button></div>
               </div>
             </div>
           </div>
@@ -7468,7 +7468,7 @@ window.PAGES = {
           <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
             <i class="fa-solid fa-sync"></i>
             <span>Refresh Status</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-5 gap-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
@@ -7653,37 +7653,37 @@ window.PAGES = {
               <i class="fa-solid fa-user-plus text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">Add Resident</span>
-          </button>
+          
           <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-file-import text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">Bulk Import</span>
-          </button>
+          
           <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-file-invoice text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">Send Invoices</span>
-          </button>
+          
           <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-bell text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">Send Notice</span>
-          </button>
+          
           <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-chart-pie text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">View Reports</span>
-          </button>
+          
           <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-sync text-neutral-600 text-xl"></i>
             </div>
             <span class="text-sm text-neutral-900">Sync SAP</span>
-          </button>
+          
         </div>
       </div>
       <div id="filter-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
@@ -7692,7 +7692,7 @@ window.PAGES = {
           <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-2">
             <i class="fa-solid fa-rotate-left text-xs"></i>
             <span>Reset Filters</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-5 gap-4">
           <div>
@@ -7748,11 +7748,11 @@ window.PAGES = {
           <button class="px-6 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
             <i class="fa-solid fa-magnifying-glass"></i>
             <span>Apply Filters</span>
-          </button>
+          
           <button class="px-6 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
             Clear All
-          </button>
-        </div>
+          
+        </button></div>
       </div>
       <div id="residents-table-section" class="bg-white rounded-lg border border-neutral-200 mb-8">
         <div class="p-6 border-b border-neutral-200">
@@ -7765,15 +7765,15 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-download"></i>
                 <span>Export CSV</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-pdf"></i>
                 <span>Export PDF</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-print"></i>
                 <span>Print</span>
-              </button>
+              
             </div>
           </div>
         </div>
@@ -7845,14 +7845,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -7902,14 +7902,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -7959,14 +7959,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -8016,14 +8016,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -8073,14 +8073,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -8130,14 +8130,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -8187,14 +8187,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
               <tr class="hover:bg-neutral-50">
@@ -8244,14 +8244,14 @@ window.PAGES = {
                   <div class="flex items-center gap-2">
                     <button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-eye"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-edit"></i>
-                    </button>
-                    <button class="text-neutral-600 hover:text-neutral-900">
+                    
+                    </button><button class="text-neutral-600 hover:text-neutral-900">
                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                  </div>
+                    
+                  </button></div>
                 </td>
               </tr>
             </tbody>
@@ -8262,16 +8262,16 @@ window.PAGES = {
           <div class="flex items-center gap-2">
             <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 disabled:opacity-50 disabled:cursor-not-allowed">
               <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">...</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">30</button>
-            <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+            
+            </button><button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">...
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">30
+            </button><button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
               <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+            
+          </button></div>
         </div>
       </div>
       <div id="sap-integration-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
@@ -8288,7 +8288,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-sync"></i>
               <span>Sync Now</span>
-            </button>
+            
           </div>
         </div>
         <div class="grid grid-cols-4 gap-6">
@@ -8492,7 +8492,7 @@ window.PAGES = {
           <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
             <i class="fa-solid fa-clock-rotate-left"></i>
             <span>View All</span>
-          </button>
+          
         </div>
         <div class="space-y-4">
           <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
@@ -8561,7 +8561,7 @@ window.PAGES = {
           <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
             <i class="fa-solid fa-edit"></i>
             <span>Edit Settings</span>
-          </button>
+          
         </div>
         <div class="grid grid-cols-4 gap-6">
           <div class="p-4 border border-neutral-200 rounded-lg">
@@ -8672,20 +8672,20 @@ window.PAGES = {
             <button class="px-4 py-3 text-sm text-neutral-900 border-b-2 border-neutral-900">
               <i class="fa-solid fa-users mr-2"></i>
               Users
-            </button>
-            <button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
+            
+            </button><button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
               <i class="fa-solid fa-shield-halved mr-2"></i>
               Roles
-            </button>
-            <button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
+            
+            </button><button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
               <i class="fa-solid fa-key mr-2"></i>
               Permissions
-            </button>
-            <button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
+            
+            </button><button class="px-4 py-3 text-sm text-neutral-500 hover:text-neutral-900 border-b-2 border-transparent">
               <i class="fa-solid fa-cog mr-2"></i>
               Settings
-            </button>
-          </div>
+            
+          </button></div>
         </div>
         <div class="p-6">
           <div class="flex items-center justify-between mb-6">
@@ -8697,11 +8697,11 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-download"></i>
                 <span>Export</span>
-              </button>
+              
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-import"></i>
                 <span>Bulk Import</span>
-              </button>
+              
             </div>
           </div>
           <div class="overflow-x-auto">
@@ -8767,14 +8767,14 @@ window.PAGES = {
                     <div class="flex items-center gap-2">
                       <button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-eye"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-edit"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
-                      </button>
-                    </div>
+                      
+                    </button></div>
                   </td>
                 </tr>
                 <tr class="hover:bg-neutral-50">
@@ -8821,14 +8821,14 @@ window.PAGES = {
                     <div class="flex items-center gap-2">
                       <button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-eye"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-edit"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
-                      </button>
-                    </div>
+                      
+                    </button></div>
                   </td>
                 </tr>
                 <tr class="hover:bg-neutral-50">
@@ -8874,14 +8874,14 @@ window.PAGES = {
                     <div class="flex items-center gap-2">
                       <button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-eye"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-edit"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
-                      </button>
-                    </div>
+                      
+                    </button></div>
                   </td>
                 </tr>
                 <tr class="hover:bg-neutral-50">
@@ -8927,14 +8927,14 @@ window.PAGES = {
                     <div class="flex items-center gap-2">
                       <button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-eye"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-edit"></i>
-                      </button>
-                      <button class="text-neutral-600 hover:text-neutral-900">
+                      
+                      </button><button class="text-neutral-600 hover:text-neutral-900">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
-                      </button>
-                    </div>
+                      
+                    </button></div>
                   </td>
                 </tr>
               </tbody>
@@ -8952,7 +8952,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-plus"></i>
               <span>Create Custom Role</span>
-            </button>
+            
           </div>
         </div>
         <div class="p-6">
@@ -8970,8 +8970,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -8984,8 +8984,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9000,8 +9000,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9013,8 +9013,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9029,8 +9029,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9042,8 +9042,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9058,8 +9058,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9072,8 +9072,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9088,8 +9088,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9099,8 +9099,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9115,8 +9115,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9127,8 +9127,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">0 users assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
             <div class="border border-neutral-200 rounded-lg p-6">
               <div class="flex items-center justify-between mb-4">
@@ -9143,8 +9143,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9155,8 +9155,8 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">236 users assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details</button>
-              </div>
+                <button class="text-sm text-neutral-900 hover:underline">View Details
+              </button></div>
             </div>
           </div>
         </div>
@@ -9171,7 +9171,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-edit"></i>
               <span>Edit Configuration</span>
-            </button>
+            
           </div>
         </div>
         <div class="p-6">
@@ -9252,7 +9252,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-edit"></i>
               <span>Edit Rules</span>
-            </button>
+            
           </div>
         </div>
         <div class="p-6">
@@ -9352,7 +9352,7 @@ window.PAGES = {
             <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
               <i class="fa-solid fa-sliders"></i>
               <span>Manage Features</span>
-            </button>
+            
           </div>
         </div>
         <div class="p-6">
@@ -9467,8 +9467,8 @@ window.PAGES = {
                 </div>
                 <button class="text-neutral-600 hover:text-neutral-900">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                </button>
-              </div>
+                
+              </button></div>
             </div>
           </div>
         </div>
@@ -9483,11 +9483,11 @@ window.PAGES = {
         <div class="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <i class="fa-solid fa-shield-halved text-neutral-400 text-2xl"></i>
         </div>
-        <h3 class="text-lg text-neutral-900 mb-2">Security Personnel Management</h3>
-        <p class="text-neutral-500 mb-4">This module is coming soon.</p>
-        <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800">
-          Request Early Access
-        </button>
+        <h3 class="text-lg text-neutral-900 mb-2">Security Personnel Management</h3><span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full mb-3">Not part of MVP</span>
+        <p class="text-neutral-500 mb-4">This feature is planned for future releases and is not included in the current MVP.</p>
+        
+          
+        
       </div>
     `
   },
@@ -9500,11 +9500,11 @@ window.PAGES = {
         <div class="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <i class="fa-solid fa-gear text-neutral-400 text-2xl"></i>
         </div>
-        <h3 class="text-lg text-neutral-900 mb-2">System Settings</h3>
-        <p class="text-neutral-500 mb-4">This module is coming soon.</p>
-        <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800">
-          Request Early Access
-        </button>
+        <h3 class="text-lg text-neutral-900 mb-2">System Settings</h3><span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full mb-3">Not part of MVP</span>
+        <p class="text-neutral-500 mb-4">This feature is planned for future releases and is not included in the current MVP.</p>
+        
+          
+        
       </div>
     `
   }

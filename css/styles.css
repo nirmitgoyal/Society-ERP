@@ -9,6 +9,66 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
 }
 
+/* Demo mode disabled state for buttons */
+.demo-disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  position: relative;
+}
+
+/* Tooltip for disabled buttons */
+.demo-tooltip {
+  position: relative;
+  cursor: not-allowed !important;
+}
+
+.demo-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  background: #171717;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.demo-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #171717;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+}
+
+.demo-tooltip:hover::after,
+.demo-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Disabled search input styling */
+input:disabled {
+  background-color: #f5f5f5 !important;
+  cursor: not-allowed;
+}
+
 /* Page transition animations */
 .page-content {
   animation: fadeIn 0.2s ease-in-out;
