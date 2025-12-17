@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocietyERP - Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              "50": "#fafafa", "100": "#f5f5f5", "200": "#e5e5e5",
+              "300": "#d4d4d4", "400": "#a3a3a3", "500": "#737373",
+              "600": "#525252", "700": "#404040", "800": "#262626",
+              "900": "#171717", "950": "#0a0a0a"
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-neutral-50">
+  <div id="main-container" class="flex h-screen bg-neutral-50">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-64 bg-white border-r border-neutral-200 flex flex-col">
+      <!-- Logo -->
+      <div class="p-6 border-b border-neutral-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-building text-white text-lg"></i>
+          </div>
+          <div>
+            <h1 class="text-lg text-neutral-900 font-semibold">SocietyERP</h1>
+            <p class="text-xs text-neutral-500">Admin Dashboard</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex-1 overflow-y-auto p-4 hide-scrollbar">
+        <div class="space-y-1" id="nav-menu">
+          <a href="#dashboard" data-page="dashboard" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-chart-line w-5"></i>
+            <span class="text-sm">Dashboard</span>
+          </a>
+
+          <div class="pt-4 pb-2">
+            <p class="px-3 text-xs text-neutral-500 uppercase tracking-wider">Accounting</p>
+          </div>
+          <a href="#billing" data-page="billing" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-file-invoice-dollar w-5"></i>
+            <span class="text-sm">Billing & Payments</span>
+          </a>
+          <a href="#defaulters" data-page="defaulters" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-user-xmark w-5"></i>
+            <span class="text-sm">Defaulters</span>
+            <span class="ml-auto bg-neutral-100 text-neutral-700 text-xs px-2 py-0.5 rounded-full">12</span>
+          </a>
+          <a href="#reconciliation" data-page="reconciliation" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-rotate w-5"></i>
+            <span class="text-sm">Reconciliation</span>
+          </a>
+          <a href="#reports" data-page="reports" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-chart-bar w-5"></i>
+            <span class="text-sm">Reports</span>
+          </a>
+          <a href="#audit-logs" data-page="audit-logs" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-file-invoice w-5"></i>
+            <span class="text-sm">Audit Logs</span>
+          </a>
+
+          <div class="pt-4 pb-2">
+            <p class="px-3 text-xs text-neutral-500 uppercase tracking-wider">Operations</p>
+          </div>
+          <a href="#complaints" data-page="complaints" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-clipboard-list w-5"></i>
+            <span class="text-sm">Complaints</span>
+            <span class="ml-auto bg-neutral-100 text-neutral-700 text-xs px-2 py-0.5 rounded-full">8</span>
+          </a>
+          <a href="#vendors" data-page="vendors" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-truck w-5"></i>
+            <span class="text-sm">Vendors</span>
+          </a>
+          <a href="#vendor-workforce" data-page="vendor-workforce" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-users w-5"></i>
+            <span class="text-sm">Vendor Workforce</span>
+          </a>
+          <a href="#attendance" data-page="attendance" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-fingerprint w-5"></i>
+            <span class="text-sm">Attendance</span>
+          </a>
+
+          <div class="pt-4 pb-2">
+            <p class="px-3 text-xs text-neutral-500 uppercase tracking-wider">Management</p>
+          </div>
+          <a href="#residents" data-page="residents" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-building-user w-5"></i>
+            <span class="text-sm">Residents</span>
+          </a>
+          <a href="#security" data-page="security" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-shield-halved w-5"></i>
+            <span class="text-sm">Security Personnels</span>
+          </a>
+          <a href="#users-roles" data-page="users-roles" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-user-gear w-5"></i>
+            <span class="text-sm">Users & Roles</span>
+          </a>
+          <a href="#settings" data-page="settings" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-gear w-5"></i>
+            <span class="text-sm">Settings</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- User Profile -->
+      <div class="p-4 border-t border-neutral-200">
+        <div class="flex items-center gap-3 px-3 py-2">
+          <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=8547" alt="Admin" class="w-10 h-10 rounded-full bg-neutral-100">
+          <div class="flex-1">
+            <p class="text-sm text-neutral-900">Rajesh Kumar</p>
+            <p class="text-xs text-neutral-500">Head Admin</p>
+          </div>
+          <button class="text-neutral-400 hover:text-neutral-600">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="main-content" class="flex-1 flex flex-col overflow-hidden">
+      <!-- Header -->
+      <header id="header" class="bg-white border-b border-neutral-200 px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 id="page-title" class="text-2xl text-neutral-900">Dashboard Overview</h2>
+            <p id="page-subtitle" class="text-sm text-neutral-500 mt-1">Welcome back! Here's what's happening today.</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="relative">
+              <i class="fa-solid fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+              <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent w-64">
+            </div>
+            <button class="relative p-2 text-neutral-600 hover:bg-neutral-100 rounded-lg">
+              <i class="fa-regular fa-bell text-xl"></i>
+              <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamic Content Area -->
+      <main id="app" class="flex-1 overflow-y-auto bg-neutral-50 p-8">
+        <div class="flex items-center justify-center h-full">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-neutral-900"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/pages.js"></script>
+  <script src="js/router.js"></script>
+</body>
+</html>
