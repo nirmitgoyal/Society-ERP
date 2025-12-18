@@ -17,9 +17,8 @@ window.PAGES = {
             </div><span
               class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">+2% (MoM)</span>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹8,45,230</h3>
-          <p class="text-sm text-neutral-500">Total Collections(maintenance and
-            fines) (MTD)</p>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹11,85,000</h3>
+          <p class="text-sm text-neutral-500">Total Collections (MTD)</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
@@ -28,10 +27,10 @@ window.PAGES = {
               <i
                 class="fa-solid fa-exclamation-triangle text-neutral-600 text-xl"></i>
             </div><span
-              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">12
+              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">8
               Units</span>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹1,24,500</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹94,400</h3>
           <p class="text-sm text-neutral-500">Pending Payments</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
@@ -53,9 +52,9 @@ window.PAGES = {
               class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-users text-neutral-600 text-xl"></i></div>
             <span
-              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">94.2%</span>
+              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">95.2%</span>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">156/165</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">157/165</h3>
           <p class="text-sm text-neutral-500">Units Paid (MTD)</p>
         </div>
       </div>
@@ -457,7 +456,7 @@ window.PAGES = {
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">247</h3>
           <p class="text-sm text-neutral-500">Total Invoices</p>
-          <p class="text-xs text-neutral-400 mt-2">Current period</p>
+          <p class="text-xs text-neutral-400 mt-2">₹12,79,400 total value</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
@@ -467,7 +466,7 @@ window.PAGES = {
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">198</h3>
           <p class="text-sm text-neutral-500">Paid Invoices</p>
-          <p class="text-xs text-neutral-400 mt-2">80.2% collection rate</p>
+          <p class="text-xs text-neutral-400 mt-2">₹11,85,000 collected</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
@@ -475,9 +474,9 @@ window.PAGES = {
               <i class="fa-solid fa-clock text-neutral-600 text-xl"></i>
             </div>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">37</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">3</h3>
           <p class="text-sm text-neutral-500">Pending Invoices</p>
-          <p class="text-xs text-neutral-400 mt-2">Within due date</p>
+          <p class="text-xs text-neutral-400 mt-2">₹21,600 awaiting</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
@@ -485,9 +484,9 @@ window.PAGES = {
               <i class="fa-solid fa-triangle-exclamation text-neutral-600 text-xl"></i>
             </div>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">12</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">5</h3>
           <p class="text-sm text-neutral-500">Overdue Invoices</p>
-          <p class="text-xs text-neutral-400 mt-2">Requires attention</p>
+          <p class="text-xs text-neutral-400 mt-2">₹72,800 overdue</p>
         </div>
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
@@ -495,9 +494,9 @@ window.PAGES = {
               <i class="fa-solid fa-indian-rupee-sign text-neutral-600 text-xl"></i>
             </div>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹1.2M</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹94,400</h3>
           <p class="text-sm text-neutral-500">Total Outstanding</p>
-          <p class="text-xs text-neutral-400 mt-2">Across all invoices</p>
+          <p class="text-xs text-neutral-400 mt-2">Pending + Overdue</p>
         </div>
       </div>
       <div id="quick-filters-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
@@ -957,8 +956,8 @@ window.PAGES = {
                 <p class="text-xs text-neutral-500">Current dues</p>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹4.2L</p>
-                <p class="text-xs text-neutral-500">35 invoices</p>
+                <p class="text-lg text-neutral-900">₹21,600</p>
+                <p class="text-xs text-neutral-500">3 invoices</p>
               </div>
             </div>
             <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
@@ -967,8 +966,8 @@ window.PAGES = {
                 <p class="text-xs text-neutral-500">Early overdue</p>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹3.8L</p>
-                <p class="text-xs text-neutral-500">28 invoices</p>
+                <p class="text-lg text-neutral-900">₹50,800</p>
+                <p class="text-xs text-neutral-500">4 invoices</p>
               </div>
             </div>
             <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
@@ -977,8 +976,8 @@ window.PAGES = {
                 <p class="text-xs text-neutral-500">Late overdue</p>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹2.1L</p>
-                <p class="text-xs text-neutral-500">15 invoices</p>
+                <p class="text-lg text-neutral-900">₹0</p>
+                <p class="text-xs text-neutral-500">0 invoices</p>
               </div>
             </div>
             <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
@@ -987,8 +986,8 @@ window.PAGES = {
                 <p class="text-xs text-neutral-500">Critical overdue</p>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹1.5L</p>
-                <p class="text-xs text-neutral-500">9 invoices</p>
+                <p class="text-lg text-neutral-900">₹22,000</p>
+                <p class="text-xs text-neutral-500">1 invoice</p>
               </div>
             </div>
           </div>
@@ -1015,7 +1014,7 @@ window.PAGES = {
                 </div>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹6.8L</p>
+                <p class="text-lg text-neutral-900">₹54,800</p>
                 <p class="text-xs text-neutral-500">58%</p>
               </div>
             </div>
@@ -1030,7 +1029,7 @@ window.PAGES = {
                 </div>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹3.5L</p>
+                <p class="text-lg text-neutral-900">₹28,300</p>
                 <p class="text-xs text-neutral-500">30%</p>
               </div>
             </div>
@@ -1045,7 +1044,7 @@ window.PAGES = {
                 </div>
               </div>
               <div class="text-right">
-                <p class="text-lg text-neutral-900">₹1.4L</p>
+                <p class="text-lg text-neutral-900">₹11,300</p>
                 <p class="text-xs text-neutral-500">12%</p>
               </div>
             </div>
@@ -1119,7 +1118,7 @@ window.PAGES = {
   "billing": {
     title: "Payments",
     subtitle: "Manage invoices, payments, and billing cycles.",
-    content: `<div id="payment-stats" class="grid grid-cols-5 gap-6 mb-8">
+    content: `<div id="payment-stats" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div
@@ -1164,17 +1163,6 @@ window.PAGES = {
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">1</h3>
           <p class="text-sm text-neutral-500">Synced to SAP</p>
-        </div>
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div class="flex items-center justify-between mb-4">
-            <div
-              class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-mobile-alt text-neutral-600 text-xl"></i>
-            </div><span
-              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">UPI</span>
-          </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">1</h3>
-          <p class="text-sm text-neutral-500">UPI Payments</p>
         </div>
       </div>
       <div id="filters-section"
@@ -1661,28 +1649,17 @@ window.PAGES = {
   "defaulters": {
     title: "Payment Defaulters",
     subtitle: "Track and manage overdue payments and defaulters.",
-    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-indian-rupee-sign text-neutral-600 text-xl"></i>
-            </div>
-          </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹1,80,000</h3>
-          <p class="text-sm text-neutral-500">Total Receivables</p>
-          <p class="text-xs text-neutral-400 mt-2">As of Dec 10, 2025</p>
-        </div>
-
+    content: `<div id="stats-section" class="grid grid-cols-3 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-exclamation-triangle text-neutral-600 text-xl"></i>
             </div>
-            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">13.9%</span>
+            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">77.1%</span>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹25,000</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹72,800</h3>
           <p class="text-sm text-neutral-500">Overdue Receivables</p>
-          <p class="text-xs text-neutral-400 mt-2">Requires attention</p>
+          <p class="text-xs text-neutral-400 mt-2">of total outstanding</p>
         </div>
 
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
@@ -1690,9 +1667,9 @@ window.PAGES = {
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-user-xmark text-neutral-600 text-xl"></i>
             </div>
-            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">12 Units</span>
+            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">8 Units</span>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">12</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">8</h3>
           <p class="text-sm text-neutral-500">Active Defaulters</p>
           <p class="text-xs text-neutral-400 mt-2">Across all wings</p>
         </div>
@@ -1703,7 +1680,7 @@ window.PAGES = {
               <i class="fa-solid fa-clock text-neutral-600 text-xl"></i>
             </div>
           </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">₹15,000</h3>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹22,000</h3>
           <p class="text-sm text-neutral-500">90+ Days Overdue</p>
           <p class="text-xs text-neutral-400 mt-2">Critical status</p>
         </div>
@@ -1722,45 +1699,45 @@ window.PAGES = {
             <div class="p-4 border border-neutral-200 rounded-lg">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-neutral-900">0-30 Days</span>
-                <span class="text-sm text-neutral-600">₹80,000</span>
+                <span class="text-sm text-neutral-600">₹21,600</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-400 h-2 rounded-full" style="width: 44.4%"></div>
+                <div class="bg-neutral-400 h-2 rounded-full" style="width: 22.9%"></div>
               </div>
-              <p class="text-xs text-neutral-500 mt-2">44.4% of total receivables</p>
+              <p class="text-xs text-neutral-500 mt-2">22.9% of total receivables</p>
             </div>
 
             <div class="p-4 border border-neutral-200 rounded-lg">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-neutral-900">31-60 Days</span>
-                <span class="text-sm text-neutral-600">₹60,000</span>
+                <span class="text-sm text-neutral-600">₹50,800</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-500 h-2 rounded-full" style="width: 33.3%"></div>
+                <div class="bg-neutral-500 h-2 rounded-full" style="width: 53.8%"></div>
               </div>
-              <p class="text-xs text-neutral-500 mt-2">33.3% of total receivables</p>
+              <p class="text-xs text-neutral-500 mt-2">53.8% of total receivables</p>
             </div>
 
             <div class="p-4 border border-neutral-200 rounded-lg">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-neutral-900">61-90 Days</span>
-                <span class="text-sm text-neutral-600">₹25,000</span>
+                <span class="text-sm text-neutral-600">₹0</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-600 h-2 rounded-full" style="width: 13.9%"></div>
+                <div class="bg-neutral-600 h-2 rounded-full" style="width: 0%"></div>
               </div>
-              <p class="text-xs text-neutral-500 mt-2">13.9% of total receivables</p>
+              <p class="text-xs text-neutral-500 mt-2">0% of total receivables</p>
             </div>
 
             <div class="p-4 border border-neutral-200 rounded-lg">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-neutral-900">90+ Days</span>
-                <span class="text-sm text-neutral-600">₹15,000</span>
+                <span class="text-sm text-neutral-600">₹22,000</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-800 h-2 rounded-full" style="width: 8.3%"></div>
+                <div class="bg-neutral-800 h-2 rounded-full" style="width: 23.3%"></div>
               </div>
-              <p class="text-xs text-neutral-500 mt-2">8.3% of total receivables - Critical</p>
+              <p class="text-xs text-neutral-500 mt-2">23.3% of total receivables - Critical</p>
             </div>
           </div>
         </div>
@@ -2231,12 +2208,11 @@ window.PAGES = {
         </div>
 
         <div class="flex items-center justify-between mt-6 pt-4 border-t border-neutral-200">
-          <p class="text-sm text-neutral-600">Showing 8 of 12 defaulters</p>
+          <p class="text-sm text-neutral-600">Showing 8 of 8 defaulters</p>
           <div class="flex items-center gap-2">
             <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Previous
             </button><button class="px-3 py-1 bg-neutral-900 text-white rounded text-sm">1
-            </button><button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">2
-            <button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Next
+            </button><button class="px-3 py-1 border border-neutral-300 rounded text-sm hover:bg-neutral-50">Next
           </div>
         </button></div>
       </div>
@@ -3476,7 +3452,7 @@ window.PAGES = {
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-user-shield text-neutral-600 text-xl"></i>
             </div>
-            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">Today</span>
+            <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">Monthly</span>
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">142</h3>
           <p class="text-sm text-neutral-500">User Actions</p>
@@ -6106,7 +6082,7 @@ window.PAGES = {
               class="flex items-center justify-between p-3 border border-neutral-200 rounded-lg">
               <div>
                 <p class="text-sm text-neutral-500">Total Paid (This Month)</p>
-                <p class="text-xl text-neutral-900 mt-1">₹8,42,500</p>
+                <p class="text-xl text-neutral-900 mt-1">₹11,85,000</p>
               </div><i
                 class="fa-solid fa-indian-rupee-sign text-2xl text-neutral-600"></i>
             </div>
@@ -6114,7 +6090,7 @@ window.PAGES = {
               class="flex items-center justify-between p-3 border border-neutral-200 rounded-lg">
               <div>
                 <p class="text-sm text-neutral-500">Outstanding Amount</p>
-                <p class="text-xl text-neutral-900 mt-1">₹1,23,000</p>
+                <p class="text-xl text-neutral-900 mt-1">₹94,400</p>
               </div><i class="fa-solid fa-clock text-2xl text-neutral-600"></i>
             </div>
             <div
@@ -9126,13 +9102,13 @@ window.PAGES = {
                   </div>
                   <div>
                     <p class="text-sm text-neutral-900">Pending</p>
-                    <p class="text-xs text-neutral-500">Due within 7 days</p>
+                    <p class="text-xs text-neutral-500">Due within 30 days</p>
                   </div>
                 </div>
-                <span class="text-sm text-neutral-900">8 residents</span>
+                <span class="text-sm text-neutral-900">3 residents</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-800 h-2 rounded-full" style="width: 3.4%"></div>
+                <div class="bg-neutral-800 h-2 rounded-full" style="width: 1.3%"></div>
               </div>
             </div>
             <div class="p-4 border border-neutral-200 rounded-lg">
@@ -9146,20 +9122,20 @@ window.PAGES = {
                     <p class="text-xs text-neutral-500">Payment overdue</p>
                   </div>
                 </div>
-                <span class="text-sm text-neutral-900">4 residents</span>
+                <span class="text-sm text-neutral-900">5 residents</span>
               </div>
               <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-800 h-2 rounded-full" style="width: 1.7%"></div>
+                <div class="bg-neutral-800 h-2 rounded-full" style="width: 2.1%"></div>
               </div>
             </div>
             <div class="mt-6 p-4 bg-neutral-50 rounded-lg">
               <div class="flex items-center justify-between mb-2">
                 <p class="text-sm text-neutral-700">Total Outstanding Amount</p>
-                <p class="text-lg text-neutral-900">₹2,45,000</p>
+                <p class="text-lg text-neutral-900">₹94,400</p>
               </div>
               <div class="flex items-center justify-between">
                 <p class="text-xs text-neutral-500">Collection Rate (This Month)</p>
-                <p class="text-sm text-neutral-900">94.8%</p>
+                <p class="text-sm text-neutral-900">92.6%</p>
               </div>
             </div>
           </div>
