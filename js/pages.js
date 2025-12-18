@@ -9622,14 +9622,10 @@ window.PAGES = {
                     <i class="fa-solid fa-crown text-neutral-600 text-xl"></i>
                   </div>
                   <div>
-                    <h4 class="text-sm text-neutral-900">Executive Admin</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 3 (Highest)</p>
+                    <h4 class="text-sm text-neutral-900">Head Admin</h4>
                   </div>
                 </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
+              </div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9638,35 +9634,17 @@ window.PAGES = {
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Override Approvals</span>
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Audit Pack</span>
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Assign Roles</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
-                <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details
-              </button></div>
-            </div>
-            <div class="border border-neutral-200 rounded-lg p-6">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-user-tie text-neutral-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-sm text-neutral-900">Senior Admin</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 2</p>
-                  </div>
-                </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
-              <div class="mb-4">
-                <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
-                <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Financials</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Approve Vendor Payments</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Manage Complaints</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Defaulter Dashboard</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Treasurer Tasks</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Generate Reports</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Initiate Audit Pack</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Manage Budgets</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Create Invoices</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Record Payments</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Reconcile Transactions</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Audit Logs</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Export Reports</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Record Gate Logs</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Preapproved Visitors</span>
                 </div>
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
@@ -9681,21 +9659,15 @@ window.PAGES = {
                     <i class="fa-solid fa-user-gear text-neutral-600 text-xl"></i>
                   </div>
                   <div>
-                    <h4 class="text-sm text-neutral-900">Head Admin</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 1</p>
+                    <h4 class="text-sm text-neutral-900">Executive Admin</h4>
                   </div>
                 </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
+              </div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Treasurer Tasks</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Generate Reports</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Initiate Audit Pack</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Manage Budgets</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Dashboard</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Reports</span>
                 </div>
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
@@ -9711,13 +9683,9 @@ window.PAGES = {
                   </div>
                   <div>
                     <h4 class="text-sm text-neutral-900">Treasurer</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 1</p>
                   </div>
                 </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
+              </div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9726,6 +9694,7 @@ window.PAGES = {
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Reconcile Transactions</span>
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Audit Logs</span>
                   <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Export Reports</span>
+                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Reports</span>
                 </div>
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
@@ -9741,13 +9710,9 @@ window.PAGES = {
                   </div>
                   <div>
                     <h4 class="text-sm text-neutral-900">Security</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 0</p>
                   </div>
                 </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
+              </div>
               <div class="mb-4">
                 <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
                 <div class="flex flex-wrap gap-1">
@@ -9757,62 +9722,6 @@ window.PAGES = {
               </div>
               <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
                 <p class="text-xs text-neutral-500">1 user assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details
-              </button></div>
-            </div>
-            <div class="border border-neutral-200 rounded-lg p-6">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-truck text-neutral-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-sm text-neutral-900">Vendor Manager</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 1</p>
-                  </div>
-                </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
-              <div class="mb-4">
-                <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
-                <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Manage Vendors</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Vendor Attendance</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Create POs</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
-                <p class="text-xs text-neutral-500">0 users assigned</p>
-                <button class="text-sm text-neutral-900 hover:underline">View Details
-              </button></div>
-            </div>
-            <div class="border border-neutral-200 rounded-lg p-6">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-building-user text-neutral-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-sm text-neutral-900">Resident</h4>
-                    <p class="text-xs text-neutral-500">Hierarchy Rank: 0</p>
-                  </div>
-                </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
-              <div class="mb-4">
-                <p class="text-xs text-neutral-600 mb-2">Permissions:</p>
-                <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">View Own Invoices</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Pay Bills</span>
-                  <span class="px-2 py-1 bg-neutral-50 text-neutral-700 text-xs rounded">Raise Complaints</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
-                <p class="text-xs text-neutral-500">236 users assigned</p>
                 <button class="text-sm text-neutral-900 hover:underline">View Details
               </button></div>
             </div>
@@ -10086,47 +9995,6 @@ window.PAGES = {
                   <span class="text-xs text-neutral-500">Active</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="device-section" class="bg-white rounded-lg border border-neutral-200">
-        <div class="p-6 border-b border-neutral-200">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-lg text-neutral-900">Device Configuration</h3>
-              <p class="text-sm text-neutral-500 mt-1">Mobile devices and tablets assigned to users</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-tablet text-neutral-600 text-xl"></i>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">guard_tablet_07</p>
-                  <p class="text-xs text-neutral-500 mt-1">Assigned to: Guard K (u_security_01)</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-6">
-                <div>
-                  <p class="text-xs text-neutral-600 mb-1">OS:</p>
-                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Android</span>
-                </div>
-                <div>
-                  <p class="text-xs text-neutral-600 mb-1">Offline Mode:</p>
-                  <div class="flex items-center gap-1">
-                    <div class="w-2 h-2 bg-neutral-800 rounded-full"></div>
-                    <span class="text-xs text-neutral-900">Enabled</span>
-                  </div>
-                </div>
-                <button class="text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
             </div>
           </div>
         </div>
