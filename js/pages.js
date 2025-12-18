@@ -15,7 +15,7 @@ window.PAGES = {
               <i
                 class="fa-solid fa-indian-rupee-sign text-neutral-600 text-xl"></i>
             </div><span
-              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">+12.5%</span>
+              class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">+2% (MoM)</span>
           </div>
           <h3 class="text-2xl text-neutral-900 mb-1">₹8,45,230</h3>
           <p class="text-sm text-neutral-500">Total Collections(maintenance and
@@ -2274,7 +2274,78 @@ window.PAGES = {
   "reconciliation": {
     title: "Reconciliation",
     subtitle: "Match and reconcile transactions with bank statements.",
-    content: `<div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+    content: `<!-- Triple-Check Totals Section -->
+      <div id="triple-check-totals" class="grid grid-cols-3 gap-6 mb-8">
+        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-building-columns text-white text-2xl"></i>
+            </div>
+            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">Bank</span>
+          </div>
+          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹12,45,500</h3>
+          <p class="text-sm text-neutral-600 font-medium">Total Received in Bank</p>
+          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
+            <i class="fa-solid fa-arrow-trend-up text-neutral-600 text-xs"></i>
+            <span class="text-xs text-neutral-500">219 transactions • Dec 2025</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-file-invoice-dollar text-white text-2xl"></i>
+            </div>
+            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">Invoices</span>
+          </div>
+          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹11,85,000</h3>
+          <p class="text-sm text-neutral-600 font-medium">Total Paid Invoices</p>
+          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
+            <i class="fa-solid fa-check-circle text-neutral-600 text-xs"></i>
+            <span class="text-xs text-neutral-500">215 invoices settled • Dec 2025</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-cloud-arrow-up text-white text-2xl"></i>
+            </div>
+            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">SAP</span>
+          </div>
+          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹11,25,000</h3>
+          <p class="text-sm text-neutral-600 font-medium">Total Synced with SAP</p>
+          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
+            <i class="fa-solid fa-sync text-neutral-600 text-xs"></i>
+            <span class="text-xs text-neutral-500">210 entries synced • Last: Jan 2, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Variance Alert Bar -->
+      <div id="variance-alert" class="bg-neutral-100 border border-neutral-300 rounded-lg p-4 mb-8">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-neutral-200 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-scale-balanced text-neutral-600 text-lg"></i>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-neutral-900">Triple-Check Variance Summary</p>
+              <p class="text-xs text-neutral-600 mt-1">
+                Bank vs Invoices: <span class="font-medium">₹60,500</span> (4 pending) • 
+                Invoices vs SAP: <span class="font-medium">₹60,000</span> (5 unsynced) • 
+                Bank vs SAP: <span class="font-medium">₹1,20,500</span>
+              </p>
+            </div>
+          </div>
+          <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <span>Investigate Variances</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -2334,7 +2405,7 @@ window.PAGES = {
               </div>
               <div class="flex items-center gap-2">
                 <i class="fa-solid fa-file-alt text-neutral-400 text-sm"></i>
-                <span class="text-sm text-neutral-600">Statement: SAP_BANK_STMT_202512</span>
+                <span class="text-sm text-neutral-600">Statement: BANK_STMT_2025_12</span>
               </div>
               <div class="flex items-center gap-2">
                 <i class="fa-solid fa-clock text-neutral-400 text-sm"></i>
@@ -2343,10 +2414,6 @@ window.PAGES = {
             </div>
           </div>
           <div class="flex items-center gap-3">
-            <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
-              <i class="fa-solid fa-download"></i>
-              <span>Export Report</span>
-            
             <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
               <i class="fa-solid fa-sync"></i>
               <span>Sync to SAP</span>
@@ -2396,62 +2463,6 @@ window.PAGES = {
           </div>
 
           <div class="space-y-4">
-            <div class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
-              <div class="flex items-start justify-between mb-4">
-                <div class="flex items-start gap-4">
-                  <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-money-bill text-neutral-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <div class="flex items-center gap-3 mb-2">
-                      <h4 class="text-base text-neutral-900">CASH-REC-0001</h4>
-                      <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">Cash Deposit</span>
-                      <span class="text-xs text-neutral-600 bg-neutral-50 px-2 py-1 rounded">High Priority</span>
-                    </div>
-                    <p class="text-sm text-neutral-600 mb-3">Cash deposit not uploaded</p>
-                    <div class="flex items-center gap-6 text-sm">
-                      <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-calendar text-neutral-400 text-xs"></i>
-                        <span class="text-neutral-600">Dec 5, 2025</span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-indian-rupee-sign text-neutral-400 text-xs"></i>
-                        <span class="text-neutral-600">Amount: ₹15,000</span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-building-columns text-neutral-400 text-xs"></i>
-                        <span class="text-neutral-600">HDFC-001</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2">
-                  <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=1234" alt="Assigned" class="w-8 h-8 rounded-full">
-                  <div class="text-right">
-                    <p class="text-xs text-neutral-900">Senior Admin 01</p>
-                    <p class="text-xs text-neutral-500">Assigned</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 pt-4 border-t border-neutral-100">
-                <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
-                  <i class="fa-solid fa-upload"></i>
-                  <span>Upload Receipt</span>
-                
-                <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
-                  <i class="fa-solid fa-check"></i>
-                  <span>Mark Resolved</span>
-                
-                <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
-                  <i class="fa-solid fa-user-plus"></i>
-                  <span>Reassign</span>
-                
-                <button class="ml-auto p-2 text-neutral-600 hover:text-neutral-900">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                
-              </button></div>
-            </div>
-
             <div class="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">
               <div class="flex items-start justify-between mb-4">
                 <div class="flex items-start gap-4">
@@ -2952,7 +2963,7 @@ window.PAGES = {
             </div>
             <div class="flex-1">
               <p class="text-sm text-neutral-900 mb-1">Bank statement imported</p>
-              <p class="text-xs text-neutral-500">SAP_BANK_STMT_202512 processed successfully</p>
+              <p class="text-xs text-neutral-500">BANK_STMT_2025_12 processed successfully</p>
               <p class="text-xs text-neutral-400 mt-2">5 hours ago</p>
             </div>
           </div>

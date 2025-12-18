@@ -163,7 +163,7 @@ class Router {
     if (!this.searchInput) return;
     
     if (pageName === 'dashboard') {
-      this.searchInput.placeholder = 'Search anything (resident, vendor, amount, date, unit, complaint...)';
+      this.searchInput.placeholder = 'Search (resident, vendor, amount, date, unit)';
     } else {
       this.searchInput.placeholder = 'Search...';
     }
