@@ -55,9 +55,13 @@
           <div class="pt-4 pb-2">
             <p class="px-3 text-xs text-neutral-500 uppercase tracking-wider">Accounting</p>
           </div>
-          <a href="#billing" data-page="billing" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+          <a href="#invoices" data-page="invoices" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
             <i class="fa-solid fa-file-invoice-dollar w-5"></i>
-            <span class="text-sm">Billing & Payments</span>
+            <span class="text-sm">Invoices</span>
+          </a>
+          <a href="#billing" data-page="billing" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
+            <i class="fa-solid fa-money-bill-transfer w-5"></i>
+            <span class="text-sm">Payments</span>
           </a>
           <a href="#defaulters" data-page="defaulters" class="nav-link flex items-center gap-3 px-3 py-2 rounded-lg text-neutral-700 hover:bg-neutral-100">
             <i class="fa-solid fa-user-xmark w-5"></i>
@@ -151,6 +155,29 @@
             </div>
           </div>
           <div class="flex items-center gap-4">
+            <!-- Language Dropdown -->
+            <div class="relative" id="language-container">
+              <button id="language-btn" class="flex items-center gap-2 px-3 py-2 text-neutral-600 hover:bg-neutral-100 rounded-lg border border-neutral-200" aria-label="Select language">
+                <i class="fa-solid fa-globe text-sm"></i>
+                <span class="text-sm" id="current-language">English</span>
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </button>
+              
+              <!-- Language Dropdown Menu -->
+              <div id="language-dropdown" class="hidden absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-neutral-200 z-50 overflow-hidden">
+                <div class="py-1">
+                  <button class="w-full px-4 py-2.5 text-left text-sm text-neutral-900 hover:bg-neutral-100 flex items-center gap-2 language-option active" data-lang="en">
+                    <span>English</span>
+                    <i class="fa-solid fa-check ml-auto text-neutral-900 text-xs"></i>
+                  </button>
+                  <button class="w-full px-4 py-2.5 text-left text-sm text-neutral-400 hover:bg-neutral-50 flex items-center gap-2 language-option cursor-not-allowed" data-lang="hi" disabled>
+                    <span>हिन्दी (Hindi)</span>
+                    <span class="ml-auto text-xs bg-neutral-100 text-neutral-500 px-2 py-0.5 rounded-full">Coming Soon</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <!-- Demo Mode Badge -->
             <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-amber-50 border border-amber-200 rounded-lg" title="This is a static demo. Interactive features are not functional.">
               <i class="fa-solid fa-flask text-amber-600 text-sm"></i>
@@ -312,14 +339,27 @@
       const notificationDropdown = document.getElementById('notification-dropdown');
       const notificationContainer = document.getElementById('notification-container');
       
+      // Language dropdown elements
+      const languageBtn = document.getElementById('language-btn');
+      const languageDropdown = document.getElementById('language-dropdown');
+      const languageContainer = document.getElementById('language-container');
+      
       // Toggle dropdown on button click
       notificationBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         notificationDropdown.classList.toggle('hidden');
+        languageDropdown.classList.add('hidden'); // Close language dropdown
         
         if (!notificationDropdown.classList.contains('hidden')) {
           notificationDropdown.style.animation = 'fadeIn 0.2s ease-out';
         }
+      });
+      
+      // Toggle language dropdown on button click
+      languageBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        languageDropdown.classList.toggle('hidden');
+        notificationDropdown.classList.add('hidden'); // Close notification dropdown
       });
       
       // Close dropdown when clicking outside
@@ -327,18 +367,26 @@
         if (!notificationContainer.contains(e.target)) {
           notificationDropdown.classList.add('hidden');
         }
+        if (!languageContainer.contains(e.target)) {
+          languageDropdown.classList.add('hidden');
+        }
       });
       
       // Close dropdown on Escape key
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
           notificationDropdown.classList.add('hidden');
+          languageDropdown.classList.add('hidden');
           closeMobileSidebar();
         }
       });
       
       // Prevent dropdown from closing when clicking inside it
       notificationDropdown.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+      
+      languageDropdown.addEventListener('click', function(e) {
         e.stopPropagation();
       });
       

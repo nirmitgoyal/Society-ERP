@@ -445,8 +445,679 @@ window.PAGES = {
       </div>`
   },
 
+  "invoices": {
+    title: "Invoices Management",
+    subtitle: "Track and manage all resident invoices, billing and payment status",
+    content: `<div id="stats-section" class="grid grid-cols-5 gap-6 mb-8">
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-file-invoice text-neutral-600 text-xl"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl text-neutral-900 mb-1">247</h3>
+          <p class="text-sm text-neutral-500">Total Invoices</p>
+          <p class="text-xs text-neutral-400 mt-2">Current period</p>
+        </div>
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-circle-check text-neutral-600 text-xl"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl text-neutral-900 mb-1">198</h3>
+          <p class="text-sm text-neutral-500">Paid Invoices</p>
+          <p class="text-xs text-neutral-400 mt-2">80.2% collection rate</p>
+        </div>
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-clock text-neutral-600 text-xl"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl text-neutral-900 mb-1">37</h3>
+          <p class="text-sm text-neutral-500">Pending Invoices</p>
+          <p class="text-xs text-neutral-400 mt-2">Within due date</p>
+        </div>
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-triangle-exclamation text-neutral-600 text-xl"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl text-neutral-900 mb-1">12</h3>
+          <p class="text-sm text-neutral-500">Overdue Invoices</p>
+          <p class="text-xs text-neutral-400 mt-2">Requires attention</p>
+        </div>
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-indian-rupee-sign text-neutral-600 text-xl"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl text-neutral-900 mb-1">₹1.2M</h3>
+          <p class="text-sm text-neutral-500">Total Outstanding</p>
+          <p class="text-xs text-neutral-400 mt-2">Across all invoices</p>
+        </div>
+      </div>
+      <div id="quick-filters-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg text-neutral-900">Quick Filters</h3>
+          <button class="text-sm text-neutral-600 hover:text-neutral-900">
+            <i class="fa-solid fa-rotate-right mr-2"></i>
+            Reset All
+          </button>
+        </div>
+        <div class="grid grid-cols-6 gap-4">
+          <button class="px-4 py-3 border-2 border-neutral-900 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-list"></i>
+            <span>All Invoices</span>
+          </button>
+          <button class="px-4 py-3 border-2 border-neutral-200 text-neutral-700 rounded-lg text-sm hover:border-neutral-900 hover:bg-neutral-50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Paid</span>
+          </button>
+          <button class="px-4 py-3 border-2 border-neutral-200 text-neutral-700 rounded-lg text-sm hover:border-neutral-900 hover:bg-neutral-50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-clock"></i>
+            <span>Pending</span>
+          </button>
+          <button class="px-4 py-3 border-2 border-neutral-200 text-neutral-700 rounded-lg text-sm hover:border-neutral-900 hover:bg-neutral-50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Overdue</span>
+          </button>
+          <button class="px-4 py-3 border-2 border-neutral-200 text-neutral-700 rounded-lg text-sm hover:border-neutral-900 hover:bg-neutral-50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Electricity</span>
+          </button>
+          <button class="px-4 py-3 border-2 border-neutral-200 text-neutral-700 rounded-lg text-sm hover:border-neutral-900 hover:bg-neutral-50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-wrench"></i>
+            <span>Maintenance</span>
+          </button>
+        </div>
+      </div>
+      <div id="invoice-table-section" class="bg-white rounded-lg border border-neutral-200 mb-8">
+        <div class="p-6 border-b border-neutral-200">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-lg text-neutral-900">Invoice List</h3>
+              <p class="text-sm text-neutral-500 mt-1">All invoices with payment status and aging information</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
+                <i class="fa-solid fa-download"></i>
+                <span>Export</span>
+              </button>
+              <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Bulk Reminders</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-neutral-50 border-b border-neutral-200">
+              <tr>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <span>Invoice ID</span>
+                  </div>
+                </th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Resident</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Bill Type</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Period</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Issue Date</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Due Date</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Total Amount</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Outstanding</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Status</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Aging</th>
+                <th class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-200">
+              <tr class="hover:bg-neutral-50">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <div>
+                      <p class="text-sm text-neutral-900">INV-20251201-0001</p>
+                      <p class="text-xs text-neutral-500">AR-INV-5001</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=1111" alt="Resident" class="w-8 h-8 rounded-full">
+                    <div>
+                      <p class="text-sm text-neutral-900">Asha Verma</p>
+                      <p class="text-xs text-neutral-500">F-101</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center">
+                      <i class="fa-solid fa-wrench text-neutral-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-neutral-900">Maintenance</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 01, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 15, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹3,500</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹0</p>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-neutral-800 rounded-full"></div>
+                    <span class="text-xs text-neutral-900">Paid</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">0 days</span>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View PDF">
+                      <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View Payments">
+                      <i class="fa-solid fa-money-bill"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Audit Log">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <div>
+                      <p class="text-sm text-neutral-900">INV-20251201-0008</p>
+                      <p class="text-xs text-neutral-500">AR-INV-5010</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=2222" alt="Resident" class="w-8 h-8 rounded-full">
+                    <div>
+                      <p class="text-sm text-neutral-900">Sunil Rao</p>
+                      <p class="text-xs text-neutral-500">F-102</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center">
+                      <i class="fa-solid fa-bolt text-neutral-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-neutral-900">Electricity</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 01, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 15, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹2,800</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹2,800</p>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-neutral-400 rounded-full"></div>
+                    <span class="text-xs text-neutral-900">Overdue</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">31-60 days</span>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Send Reminder">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Export PDF">
+                      <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Mark Dispute">
+                      <i class="fa-solid fa-flag"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <div>
+                      <p class="text-sm text-neutral-900">INV-20251201-0015</p>
+                      <p class="text-xs text-neutral-500">AR-INV-5015</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=3333" alt="Resident" class="w-8 h-8 rounded-full">
+                    <div>
+                      <p class="text-sm text-neutral-900">Meera Patel</p>
+                      <p class="text-xs text-neutral-500">F-205</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center">
+                      <i class="fa-solid fa-droplet text-neutral-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-neutral-900">Water</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 01, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 15, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹1,200</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹1,200</p>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-neutral-500 rounded-full"></div>
+                    <span class="text-xs text-neutral-900">Pending</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">0-30 days</span>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View PDF">
+                      <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Send Reminder">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Record Payment">
+                      <i class="fa-solid fa-money-bill"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <div>
+                      <p class="text-sm text-neutral-900">INV-20251201-0022</p>
+                      <p class="text-xs text-neutral-500">AR-INV-5022</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=4444" alt="Resident" class="w-8 h-8 rounded-full">
+                    <div>
+                      <p class="text-sm text-neutral-900">Rajesh Kumar</p>
+                      <p class="text-xs text-neutral-500">F-310</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center">
+                      <i class="fa-solid fa-wrench text-neutral-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-neutral-900">Maintenance</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 01, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 15, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹3,500</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹0</p>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-neutral-800 rounded-full"></div>
+                    <span class="text-xs text-neutral-900">Paid</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">0 days</span>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View PDF">
+                      <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View Payments">
+                      <i class="fa-solid fa-money-bill"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Audit Log">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-neutral-50">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
+                    <div>
+                      <p class="text-sm text-neutral-900">INV-20251201-0029</p>
+                      <p class="text-xs text-neutral-500">AR-INV-5029</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=5555" alt="Resident" class="w-8 h-8 rounded-full">
+                    <div>
+                      <p class="text-sm text-neutral-900">Priya Singh</p>
+                      <p class="text-xs text-neutral-500">F-412</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center">
+                      <i class="fa-solid fa-bolt text-neutral-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-neutral-900">Electricity</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 01, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">Dec 15, 2025</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹3,100</p>
+                </td>
+                <td class="px-6 py-4">
+                  <p class="text-sm text-neutral-900">₹3,100</p>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-neutral-500 rounded-full"></div>
+                    <span class="text-xs text-neutral-900">Pending</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">0-30 days</span>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-2">
+                    <button class="text-neutral-600 hover:text-neutral-900" title="View PDF">
+                      <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Send Reminder">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900" title="Record Payment">
+                      <i class="fa-solid fa-money-bill"></i>
+                    </button>
+                    <button class="text-neutral-600 hover:text-neutral-900">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="p-6 border-t border-neutral-200">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-neutral-500">Showing 1-5 of 247 invoices</p>
+            <div class="flex items-center gap-2">
+              <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="px-3 py-2 bg-neutral-900 text-white rounded-lg text-sm">1</button>
+              <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">2</button>
+              <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">3</button>
+              <span class="px-3 py-2 text-neutral-500">...</span>
+              <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">50</button>
+              <button class="px-3 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="aging-analysis-section" class="grid grid-cols-2 gap-6 mb-8">
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h3 class="text-lg text-neutral-900">Aging Analysis</h3>
+              <p class="text-sm text-neutral-500 mt-1">Outstanding amounts by aging bucket</p>
+            </div>
+            <button class="text-neutral-600 hover:text-neutral-900">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div>
+                <p class="text-sm text-neutral-900 mb-1">0-30 Days</p>
+                <p class="text-xs text-neutral-500">Current dues</p>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹4.2L</p>
+                <p class="text-xs text-neutral-500">35 invoices</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div>
+                <p class="text-sm text-neutral-900 mb-1">31-60 Days</p>
+                <p class="text-xs text-neutral-500">Early overdue</p>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹3.8L</p>
+                <p class="text-xs text-neutral-500">28 invoices</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div>
+                <p class="text-sm text-neutral-900 mb-1">61-90 Days</p>
+                <p class="text-xs text-neutral-500">Late overdue</p>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹2.1L</p>
+                <p class="text-xs text-neutral-500">15 invoices</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div>
+                <p class="text-sm text-neutral-900 mb-1">90+ Days</p>
+                <p class="text-xs text-neutral-500">Critical overdue</p>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹1.5L</p>
+                <p class="text-xs text-neutral-500">9 invoices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg border border-neutral-200 p-6">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h3 class="text-lg text-neutral-900">Bill Type Distribution</h3>
+              <p class="text-sm text-neutral-500 mt-1">Outstanding by invoice category</p>
+            </div>
+            <button class="text-neutral-600 hover:text-neutral-900">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
+                  <i class="fa-solid fa-wrench text-neutral-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-neutral-900">Maintenance</p>
+                  <p class="text-xs text-neutral-500">Monthly charges</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹6.8L</p>
+                <p class="text-xs text-neutral-500">58%</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
+                  <i class="fa-solid fa-bolt text-neutral-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-neutral-900">Electricity</p>
+                  <p class="text-xs text-neutral-500">Utility bills</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹3.5L</p>
+                <p class="text-xs text-neutral-500">30%</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
+                  <i class="fa-solid fa-droplet text-neutral-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-neutral-900">Water</p>
+                  <p class="text-xs text-neutral-500">Utility bills</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <p class="text-lg text-neutral-900">₹1.4L</p>
+                <p class="text-xs text-neutral-500">12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="recent-activity-section" class="bg-white rounded-lg border border-neutral-200">
+        <div class="p-6 border-b border-neutral-200">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-lg text-neutral-900">Recent Invoice Activity</h3>
+              <p class="text-sm text-neutral-500 mt-1">Latest invoice generation and payment events</p>
+            </div>
+            <button class="text-sm text-neutral-900 hover:underline">View All Activity</button>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
+              <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-plus text-neutral-600"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="text-sm text-neutral-900">Invoice Created</p>
+                  <span class="text-xs text-neutral-500">2 hours ago</span>
+                </div>
+                <p class="text-xs text-neutral-600 mb-2">New maintenance invoice generated for F-501 - Amit Sharma</p>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">INV-20251218-0145</span>
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">₹3,500</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
+              <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-check text-neutral-600"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="text-sm text-neutral-900">Payment Received</p>
+                  <span class="text-xs text-neutral-500">5 hours ago</span>
+                </div>
+                <p class="text-xs text-neutral-600 mb-2">Payment auto-reconciled for F-310 - Rajesh Kumar</p>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">INV-20251201-0022</span>
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">₹3,500</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
+              <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-paper-plane text-neutral-600"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="text-sm text-neutral-900">Reminder Sent</p>
+                  <span class="text-xs text-neutral-500">1 day ago</span>
+                </div>
+                <p class="text-xs text-neutral-600 mb-2">Payment reminder sent to 12 overdue residents</p>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Bulk Action</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`
+  },
+
   "billing": {
-    title: "Billing & Payments",
+    title: "Payments",
     subtitle: "Manage invoices, payments, and billing cycles.",
     content: `<div id="payment-stats" class="grid grid-cols-5 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
