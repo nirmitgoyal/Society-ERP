@@ -312,9 +312,442 @@
     </div>
   </div>
 
+  <!-- Create Invoice Modal -->
+  <div id="create-invoice-modal" class="modal-overlay" onclick="closeCreateInvoiceModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-neutral-200 flex items-center justify-between">
+        <div>
+          <h3 class="text-lg text-neutral-900 font-semibold">Create New Invoice</h3>
+          <p class="text-sm text-neutral-500 mt-1">Generate a new invoice for a resident</p>
+        </div>
+        <button onclick="closeCreateInvoiceModal()" class="p-2 text-neutral-400 hover:text-neutral-600 hover:bg-neutral-100 rounded-lg transition-colors">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="p-6 space-y-6">
+        <!-- Resident Selection -->
+        <div>
+          <label class="block text-sm text-neutral-700 mb-2 font-medium">Select Resident <span class="text-red-500">*</span></label>
+          <select id="invoice-resident" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            <option value="">Choose a resident...</option>
+            <option value="F-101">F-101 - Asha Verma</option>
+            <option value="F-102">F-102 - Sunil Rao</option>
+            <option value="F-205">F-205 - Meera Patel</option>
+            <option value="F-310">F-310 - Rajesh Kumar</option>
+            <option value="F-412">F-412 - Priya Singh</option>
+            <option value="A-304">A-304 - Amit Sharma</option>
+            <option value="B-102">B-102 - Priya Patel</option>
+            <option value="C-205">C-205 - Rahul Verma</option>
+          </select>
+        </div>
+
+        <!-- Bill Type -->
+        <div>
+          <label class="block text-sm text-neutral-700 mb-2 font-medium">Bill Type <span class="text-red-500">*</span></label>
+          <div class="grid grid-cols-3 gap-3">
+            <label class="relative">
+              <input type="radio" name="bill-type" value="maintenance" class="peer sr-only" checked>
+              <div class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-neutral-200 rounded-lg cursor-pointer peer-checked:border-neutral-900 peer-checked:bg-neutral-50 hover:border-neutral-300 transition-colors">
+                <i class="fa-solid fa-wrench text-neutral-600"></i>
+                <span class="text-sm text-neutral-700">Maintenance</span>
+              </div>
+            </label>
+            <label class="relative">
+              <input type="radio" name="bill-type" value="electricity" class="peer sr-only">
+              <div class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-neutral-200 rounded-lg cursor-pointer peer-checked:border-neutral-900 peer-checked:bg-neutral-50 hover:border-neutral-300 transition-colors">
+                <i class="fa-solid fa-bolt text-neutral-600"></i>
+                <span class="text-sm text-neutral-700">Electricity</span>
+              </div>
+            </label>
+            <label class="relative">
+              <input type="radio" name="bill-type" value="water" class="peer sr-only">
+              <div class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-neutral-200 rounded-lg cursor-pointer peer-checked:border-neutral-900 peer-checked:bg-neutral-50 hover:border-neutral-300 transition-colors">
+                <i class="fa-solid fa-droplet text-neutral-600"></i>
+                <span class="text-sm text-neutral-700">Water</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Billing Period -->
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-neutral-700 mb-2 font-medium">Billing Period <span class="text-red-500">*</span></label>
+            <select id="invoice-period" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+              <option value="Dec 2025">December 2025</option>
+              <option value="Nov 2025">November 2025</option>
+              <option value="Oct 2025">October 2025</option>
+              <option value="Sep 2025">September 2025</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-neutral-700 mb-2 font-medium">Due Date <span class="text-red-500">*</span></label>
+            <input type="date" id="invoice-due-date" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent" value="2025-12-31">
+          </div>
+        </div>
+
+        <!-- Amount -->
+        <div>
+          <label class="block text-sm text-neutral-700 mb-2 font-medium">Amount (₹) <span class="text-red-500">*</span></label>
+          <div class="relative">
+            <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-500">₹</span>
+            <input type="number" id="invoice-amount" placeholder="0.00" class="w-full pl-8 pr-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent" min="0" step="0.01">
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div>
+          <label class="block text-sm text-neutral-700 mb-2 font-medium">Description</label>
+          <textarea id="invoice-description" rows="3" placeholder="Add any additional notes or description..." class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent resize-none"></textarea>
+        </div>
+
+        <!-- Send Options -->
+        <div class="bg-neutral-50 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="send-email" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900" checked>
+            <label for="send-email" class="text-sm text-neutral-700">Send invoice notification via email</label>
+          </div>
+          <div class="flex items-center gap-3 mt-3">
+            <input type="checkbox" id="send-sms" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900">
+            <label for="send-sms" class="text-sm text-neutral-700">Send SMS reminder</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-neutral-200 flex items-center justify-end gap-3 bg-neutral-50">
+        <button onclick="closeCreateInvoiceModal()" class="px-5 py-2.5 border border-neutral-300 rounded-lg text-sm text-neutral-700 hover:bg-neutral-100 transition-colors">
+          Cancel
+        </button>
+        <button onclick="createInvoice()" class="px-5 py-2.5 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 transition-colors flex items-center gap-2">
+          <i class="fa-solid fa-plus"></i>
+          <span>Create Invoice</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create Resident Modal -->
+  <div id="create-resident-modal" class="modal-overlay" onclick="closeCreateResidentModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-neutral-200 flex items-center justify-between">
+        <div>
+          <h3 class="text-lg text-neutral-900 font-semibold">Create New Resident</h3>
+          <p class="text-sm text-neutral-500 mt-1">Add a new resident to the society directory</p>
+        </div>
+        <button onclick="closeCreateResidentModal()" class="p-2 text-neutral-400 hover:text-neutral-600 hover:bg-neutral-100 rounded-lg transition-colors">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="p-6 space-y-6">
+        <!-- Personal Information Section -->
+        <div>
+          <h4 class="text-sm font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-user text-neutral-600"></i>
+            Personal Information
+          </h4>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="resident-name" placeholder="Enter full name" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Email Address <span class="text-red-500">*</span></label>
+              <input type="email" id="resident-email" placeholder="email@example.com" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Phone Number <span class="text-red-500">*</span></label>
+              <div class="relative">
+                <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-500">+91</span>
+                <input type="tel" id="resident-phone" placeholder="9876543210" class="w-full pl-12 pr-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent" maxlength="10">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Alternate Phone</label>
+              <div class="relative">
+                <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-500">+91</span>
+                <input type="tel" id="resident-alt-phone" placeholder="9876543210" class="w-full pl-12 pr-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent" maxlength="10">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit Information Section -->
+        <div>
+          <h4 class="text-sm font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-building text-neutral-600"></i>
+            Unit Information
+          </h4>
+          <div class="grid grid-cols-3 gap-4">
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Tower <span class="text-red-500">*</span></label>
+              <select id="resident-tower" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+                <option value="">Select Tower</option>
+                <option value="A">Tower A</option>
+                <option value="B">Tower B</option>
+                <option value="C">Tower C</option>
+                <option value="D">Tower D</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Floor <span class="text-red-500">*</span></label>
+              <select id="resident-floor" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+                <option value="">Select Floor</option>
+                <option value="G">Ground Floor</option>
+                <option value="1">1st Floor</option>
+                <option value="2">2nd Floor</option>
+                <option value="3">3rd Floor</option>
+                <option value="4">4th Floor</option>
+                <option value="5">5th Floor</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Flat Number <span class="text-red-500">*</span></label>
+              <input type="text" id="resident-flat" placeholder="e.g., 101" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            </div>
+          </div>
+        </div>
+
+        <!-- Ownership Details Section -->
+        <div>
+          <h4 class="text-sm font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-key text-neutral-600"></i>
+            Ownership Details
+          </h4>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Ownership Type <span class="text-red-500">*</span></label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="relative">
+                  <input type="radio" name="ownership-type" value="owner" class="peer sr-only" checked>
+                  <div class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-neutral-200 rounded-lg cursor-pointer peer-checked:border-neutral-900 peer-checked:bg-neutral-50 hover:border-neutral-300 transition-colors">
+                    <i class="fa-solid fa-house-user text-neutral-600"></i>
+                    <span class="text-sm text-neutral-700">Owner</span>
+                  </div>
+                </label>
+                <label class="relative">
+                  <input type="radio" name="ownership-type" value="tenant" class="peer sr-only">
+                  <div class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-neutral-200 rounded-lg cursor-pointer peer-checked:border-neutral-900 peer-checked:bg-neutral-50 hover:border-neutral-300 transition-colors">
+                    <i class="fa-solid fa-file-contract text-neutral-600"></i>
+                    <span class="text-sm text-neutral-700">Tenant</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Move-in Date <span class="text-red-500">*</span></label>
+              <input type="date" id="resident-move-in" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Unit Share %</label>
+              <div class="relative">
+                <input type="number" id="resident-share" placeholder="1.25" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent" min="0" max="100" step="0.01">
+                <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-neutral-500">%</span>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Parking Slot</label>
+              <input type="text" id="resident-parking" placeholder="e.g., P-A101" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            </div>
+          </div>
+        </div>
+
+        <!-- SAP Integration Section -->
+        <div class="bg-neutral-50 rounded-lg p-4">
+          <h4 class="text-sm font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-link text-neutral-600"></i>
+            SAP Integration (Optional)
+          </h4>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">SAP Customer ID</label>
+              <input type="text" id="resident-sap-id" placeholder="AR-XXXXXXX" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent bg-white">
+            </div>
+            <div>
+              <label class="block text-sm text-neutral-700 mb-2 font-medium">Virtual Account</label>
+              <input type="text" id="resident-virtual-account" placeholder="VA-GNW-XXX" class="w-full px-4 py-3 border border-neutral-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent bg-white">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <input type="checkbox" id="auto-generate-sap" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900" checked>
+            <label for="auto-generate-sap" class="text-sm text-neutral-700">Auto-generate SAP Customer ID and Virtual Account</label>
+          </div>
+        </div>
+
+        <!-- Notification Preferences -->
+        <div class="bg-neutral-50 rounded-lg p-4">
+          <h4 class="text-sm font-semibold text-neutral-900 mb-3">Notification Preferences</h4>
+          <div class="flex items-center gap-6">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="notify-email" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900" checked>
+              <label for="notify-email" class="text-sm text-neutral-700">Email notifications</label>
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="notify-sms" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900" checked>
+              <label for="notify-sms" class="text-sm text-neutral-700">SMS notifications</label>
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="notify-whatsapp" class="w-4 h-4 border-neutral-300 rounded text-neutral-900 focus:ring-neutral-900">
+              <label for="notify-whatsapp" class="text-sm text-neutral-700">WhatsApp notifications</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-neutral-200 flex items-center justify-between bg-neutral-50">
+        <div class="flex items-center gap-2 text-sm text-neutral-500">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Fields marked with <span class="text-red-500">*</span> are required</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="closeCreateResidentModal()" class="px-5 py-2.5 border border-neutral-300 rounded-lg text-sm text-neutral-700 hover:bg-neutral-100 transition-colors">
+            Cancel
+          </button>
+          <button onclick="createResident()" class="px-5 py-2.5 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 transition-colors flex items-center gap-2">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Create Resident</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/pages.js?v=20251218"></script>
   <script src="js/router.js?v=20251218"></script>
   <script>
+    // Create Resident Modal Functions
+    function openCreateResidentModal() {
+      const modal = document.getElementById('create-resident-modal');
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+      // Set default move-in date to today
+      document.getElementById('resident-move-in').valueAsDate = new Date();
+    }
+    
+    function closeCreateResidentModal(event) {
+      if (event && event.target !== event.currentTarget) return;
+      const modal = document.getElementById('create-resident-modal');
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+      // Reset form
+      resetResidentForm();
+    }
+    
+    function resetResidentForm() {
+      document.getElementById('resident-name').value = '';
+      document.getElementById('resident-email').value = '';
+      document.getElementById('resident-phone').value = '';
+      document.getElementById('resident-alt-phone').value = '';
+      document.getElementById('resident-tower').value = '';
+      document.getElementById('resident-floor').value = '';
+      document.getElementById('resident-flat').value = '';
+      document.getElementById('resident-move-in').value = '';
+      document.getElementById('resident-share').value = '';
+      document.getElementById('resident-parking').value = '';
+      document.getElementById('resident-sap-id').value = '';
+      document.getElementById('resident-virtual-account').value = '';
+      document.querySelectorAll('input[name="ownership-type"]')[0].checked = true;
+      document.getElementById('auto-generate-sap').checked = true;
+      document.getElementById('notify-email').checked = true;
+      document.getElementById('notify-sms').checked = true;
+      document.getElementById('notify-whatsapp').checked = false;
+    }
+    
+    function createResident() {
+      const name = document.getElementById('resident-name').value.trim();
+      const email = document.getElementById('resident-email').value.trim();
+      const phone = document.getElementById('resident-phone').value.trim();
+      const tower = document.getElementById('resident-tower').value;
+      const floor = document.getElementById('resident-floor').value;
+      const flat = document.getElementById('resident-flat').value.trim();
+      const ownershipType = document.querySelector('input[name="ownership-type"]:checked')?.value;
+      const moveInDate = document.getElementById('resident-move-in').value;
+      
+      // Validation
+      if (!name || !email || !phone || !tower || !floor || !flat || !moveInDate) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+      }
+      
+      // Phone validation
+      if (phone.length !== 10 || !/^\d+$/.test(phone)) {
+        alert('Please enter a valid 10-digit phone number');
+        return;
+      }
+      
+      // Generate flat ID
+      const flatId = `${tower}-${floor}${flat}`;
+      
+      // Demo mode - just show success message
+      alert(`Resident created successfully!\n\nFlat ID: ${flatId}\nName: ${name}\nEmail: ${email}\nPhone: +91 ${phone}\nOwnership: ${ownershipType === 'owner' ? 'Owner Occupied' : 'Tenant'}\nMove-in Date: ${moveInDate}\n\n(This is a demo - no actual resident was created)`);
+      closeCreateResidentModal();
+    }
+
+    // Create Invoice Modal Functions
+    function openCreateInvoiceModal() {
+      const modal = document.getElementById('create-invoice-modal');
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeCreateInvoiceModal(event) {
+      if (event && event.target !== event.currentTarget) return;
+      const modal = document.getElementById('create-invoice-modal');
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+      // Reset form
+      document.getElementById('invoice-resident').value = '';
+      document.getElementById('invoice-amount').value = '';
+      document.getElementById('invoice-description').value = '';
+      document.querySelectorAll('input[name="bill-type"]')[0].checked = true;
+    }
+    
+    function createInvoice() {
+      const resident = document.getElementById('invoice-resident').value;
+      const billType = document.querySelector('input[name="bill-type"]:checked')?.value;
+      const period = document.getElementById('invoice-period').value;
+      const dueDate = document.getElementById('invoice-due-date').value;
+      const amount = document.getElementById('invoice-amount').value;
+      
+      if (!resident || !amount) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Demo mode - just show success message
+      alert(`Invoice created successfully!\n\nResident: ${resident}\nBill Type: ${billType}\nPeriod: ${period}\nAmount: ₹${amount}\n\n(This is a demo - no actual invoice was created)`);
+      closeCreateInvoiceModal();
+    }
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const invoiceModal = document.getElementById('create-invoice-modal');
+        const residentModal = document.getElementById('create-resident-modal');
+        if (invoiceModal.classList.contains('show')) {
+          closeCreateInvoiceModal();
+        }
+        if (residentModal.classList.contains('show')) {
+          closeCreateResidentModal();
+        }
+      }
+    });
     // Mobile sidebar functions
     function toggleMobileSidebar() {
       const sidebar = document.getElementById('sidebar');

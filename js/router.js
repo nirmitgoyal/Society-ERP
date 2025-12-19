@@ -146,6 +146,9 @@ class Router {
       // Skip navigation links
       if (el.classList.contains('nav-link')) return;
       
+      // Skip the Create Invoice button (it's functional)
+      if (el.getAttribute('onclick')?.includes('openCreateInvoiceModal')) return;
+      
       if (isActionButton) {
         el.classList.add('demo-tooltip');
         el.setAttribute('data-tooltip', 'Not available in demo');

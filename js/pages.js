@@ -550,6 +550,10 @@ window.PAGES = {
                 <i class="fa-solid fa-paper-plane"></i>
                 <span>Send Bulk Reminders</span>
               </button>
+              <button onclick="openCreateInvoiceModal()" class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
+                <i class="fa-solid fa-plus"></i>
+                <span>Create Invoice</span>
+              </button>
             </div>
           </div>
         </div>
@@ -5111,7 +5115,7 @@ window.PAGES = {
                 class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2"><i
                   class="fa-solid fa-download"></i><span>Export</span></button><button
                 class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2"><i
-                  class="fa-solid fa-print"></i><span>Print</span>
+                  class="fa-solid fa-print"></i><span>Print</span></button><button onclick="openCreateVendorModal()" class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2 demo-tooltip" data-tooltip="Not available in demo"><i class="fa-solid fa-plus"></i><span>Create Vendor</span>
             </button></div>
           </div>
         </div>
@@ -5689,150 +5693,6 @@ window.PAGES = {
                 class="fa-solid fa-upload"></i><span>Upload
                 Document</span>
           </button></div>
-        </div>
-      </div>
-      <div id="sap-integration-section"
-        class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
-        <div class="flex items-center justify-between mb-6">
-          <div>
-            <h3 class="text-lg text-neutral-900">SAP Integration Status</h3>
-            <p class="text-sm text-neutral-500 mt-1">Monitor vendor
-              synchronization with SAP system</p>
-          </div><button
-            class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2"><i
-              class="fa-solid fa-sync"></i><span>Sync All
-              Vendors</span>
-        </button></div>
-        <div class="grid grid-cols-4 gap-6 mb-6">
-          <div class="p-4 border border-neutral-200 rounded-lg">
-            <div class="flex items-center justify-between mb-3">
-              <div
-                class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                <i class="fa-solid fa-circle-check text-neutral-600"></i></div>
-              <span
-                class="text-xs text-white bg-neutral-800 px-2 py-1 rounded">Success</span>
-            </div>
-            <h3 class="text-2xl text-neutral-900 mb-1">24</h3>
-            <p class="text-sm text-neutral-500">Synced Vendors</p>
-          </div>
-          <div class="p-4 border border-neutral-200 rounded-lg">
-            <div class="flex items-center justify-between mb-3">
-              <div
-                class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                <i class="fa-solid fa-clock text-neutral-600"></i></div><span
-                class="text-xs text-neutral-700 bg-neutral-100 px-2 py-1 rounded">Pending</span>
-            </div>
-            <h3 class="text-2xl text-neutral-900 mb-1">3</h3>
-            <p class="text-sm text-neutral-500">Pending Sync</p>
-          </div>
-          <div class="p-4 border border-neutral-200 rounded-lg">
-            <div class="flex items-center justify-between mb-3">
-              <div
-                class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                <i
-                  class="fa-solid fa-triangle-exclamation text-neutral-600"></i>
-              </div><span
-                class="text-xs text-neutral-700 bg-neutral-100 px-2 py-1 rounded">Error</span>
-            </div>
-            <h3 class="text-2xl text-neutral-900 mb-1">1</h3>
-            <p class="text-sm text-neutral-500">Sync Errors</p>
-          </div>
-          <div class="p-4 border border-neutral-200 rounded-lg">
-            <div class="flex items-center justify-between mb-3">
-              <div
-                class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                <i class="fa-solid fa-calendar text-neutral-600"></i></div>
-            </div>
-            <h3 class="text-sm text-neutral-900 mb-1">Dec 17, 2025</h3>
-            <p class="text-sm text-neutral-500">Last Sync</p>
-            <p class="text-xs text-neutral-400 mt-1">10:30 AM</p>
-          </div>
-        </div>
-        <div class="overflow-x-auto">
-          <table class="w-full">
-            <thead class="bg-neutral-50 border-b border-neutral-200">
-              <tr>
-                <th
-                  class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
-                  Vendor</th>
-                <th
-                  class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
-                  SAP Supplier ID</th>
-                <th
-                  class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
-                  Sync Status</th>
-                <th
-                  class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
-                  Last Sync</th>
-                <th
-                  class="px-6 py-4 text-left text-xs text-neutral-600 uppercase tracking-wider">
-                  Actions</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-neutral-200">
-              <tr class="hover:bg-neutral-50">
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">Clean &amp; Care Services
-                  </p>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">AP-000201</p>
-                </td>
-                <td class="px-6 py-4">
-                  <div class="flex items-center gap-2"><i
-                      class="fa-solid fa-circle-check text-neutral-600"></i><span
-                      class="text-sm text-neutral-900">Synced</span></div>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">Dec 17, 2025 10:30 AM</p>
-                </td>
-                <td class="px-6 py-4"><button
-                    class="text-neutral-600 hover:text-neutral-900 text-sm"><i
-                      class="fa-solid fa-sync"></i> Sync Now
-                  </td>
-              </tr>
-              <tr class="hover:bg-neutral-50">
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">FlowFix Plumbing</p>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">AP-000202</p>
-                </td>
-                <td class="px-6 py-4">
-                  <div class="flex items-center gap-2"><i
-                      class="fa-solid fa-circle-check text-neutral-600"></i><span
-                      class="text-sm text-neutral-900">Synced</span></div>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">Dec 17, 2025 10:30 AM</p>
-                </td>
-                <td class="px-6 py-4"><button
-                    class="text-neutral-600 hover:text-neutral-900 text-sm"><i
-                      class="fa-solid fa-sync"></i> Sync Now
-                  </td>
-              </tr>
-              <tr class="hover:bg-neutral-50">
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-900">Sparkle Clean Co.</p>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-500">Not Assigned</p>
-                </td>
-                <td class="px-6 py-4">
-                  <div class="flex items-center gap-2"><i
-                      class="fa-solid fa-circle-exclamation text-neutral-400"></i><span
-                      class="text-sm text-neutral-500">Pending</span></div>
-                </td>
-                <td class="px-6 py-4">
-                  <p class="text-sm text-neutral-500">Never</p>
-                </td>
-                <td class="px-6 py-4"><button
-                    class="text-neutral-600 hover:text-neutral-900 text-sm"><i
-                      class="fa-solid fa-link"></i> Link SAP ID
-                  </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <div id="vendor-actions-section" class="grid grid-cols-2 gap-6">
@@ -8087,7 +7947,7 @@ window.PAGES = {
       <div id="quick-actions-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
         <h3 class="text-lg text-neutral-900 mb-4">Quick Actions</h3>
         <div class="grid grid-cols-6 gap-4">
-          <button class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
+          <button onclick="openCreateResidentModal()" class="p-4 border border-neutral-200 rounded-lg hover:bg-neutral-50 flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
               <i class="fa-solid fa-user-plus text-neutral-600 text-xl"></i>
             </div>
@@ -8204,15 +8064,19 @@ window.PAGES = {
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-download"></i>
                 <span>Export CSV</span>
-              
+              </button>
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-file-pdf"></i>
                 <span>Export PDF</span>
-              
+              </button>
               <button class="px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center gap-2">
                 <i class="fa-solid fa-print"></i>
                 <span>Print</span>
-              
+              </button>
+              <button onclick="openCreateResidentModal()" class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2 demo-tooltip" data-tooltip="Not available in demo">
+                <i class="fa-solid fa-plus"></i>
+                <span>Create Resident</span>
+              </button>
             </div>
           </div>
         </div>
