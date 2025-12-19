@@ -4829,35 +4829,6 @@ window.PAGES = {
             </div>
           </div>
         </div>
-        <div class="mt-6 p-4 border border-neutral-200 rounded-lg">
-          <h4 class="text-sm text-neutral-900 mb-4">Escalation Recipients</h4>
-          <div class="grid grid-cols-3 gap-4">
-            <div>
-              <label class="block text-xs text-neutral-500 mb-2">Level 1 Escalate To</label>
-              <select class="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900">
-                <option>Senior Admin</option>
-                <option>Maintenance Head</option>
-                <option>Operations Manager</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs text-neutral-500 mb-2">Level 2 Escalate To</label>
-              <select class="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900">
-                <option>Head Admin</option>
-                <option>Society Manager</option>
-                <option>Committee Member</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs text-neutral-500 mb-2">Level 3 Escalate To</label>
-              <select class="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900">
-                <option>Executive Admin</option>
-                <option>Society President</option>
-                <option>Managing Committee</option>
-              </select>
-            </div>
-          </div>
-        </div>
       </div>`
   },
 
