@@ -3193,28 +3193,6 @@ window.PAGES = {
             class="w-full px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800">Build
             Report
         </button></div>
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div
-            class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
-            <i class="fa-solid fa-file-import text-neutral-600 text-xl"></i>
-          </div>
-          <h3 class="text-lg text-neutral-900 mb-2">Import Template</h3>
-          <p class="text-sm text-neutral-500 mb-4">Upload custom report template
-            files</p><button
-            class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Import
-            Template
-        </button></div>
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div
-            class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-4">
-            <i class="fa-solid fa-share-nodes text-neutral-600 text-xl"></i>
-          </div>
-          <h3 class="text-lg text-neutral-900 mb-2">Share Reports</h3>
-          <p class="text-sm text-neutral-500 mb-4">Share reports with committee
-            members</p><button
-            class="w-full px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50">Share
-            Access
-        </button></div>
       </div>`
   },
 
@@ -4573,8 +4551,8 @@ window.PAGES = {
               <div class="flex-1 pb-6">
                 <div class="flex items-start justify-between mb-2">
                   <div>
-                    <h4 class="text-sm text-neutral-900 mb-1">Level 1 - Initial Assignment</h4>
-                    <p class="text-sm text-neutral-600">Ticket created and assigned to maintenance team</p>
+                    <h4 class="text-sm text-neutral-900 mb-1">Level 1 - Executive Admin</h4>
+                    <p class="text-sm text-neutral-600">Initial escalation to executive admin</p>
                   </div>
                   <span class="text-xs text-white bg-neutral-800 px-2 py-1 rounded">Active</span>
                 </div>
@@ -4589,39 +4567,18 @@ window.PAGES = {
                 <div class="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center flex-shrink-0">
                   <i class="fa-solid fa-user-tie text-neutral-400"></i>
                 </div>
-                <div class="w-0.5 h-full bg-neutral-200 mt-2"></div>
               </div>
-              <div class="flex-1 pb-6">
+              <div class="flex-1">
                 <div class="flex items-start justify-between mb-2">
                   <div>
-                    <h4 class="text-sm text-neutral-900 mb-1">Level 2 - Senior Admin</h4>
-                    <p class="text-sm text-neutral-600">Escalated to senior admin for review</p>
+                    <h4 class="text-sm text-neutral-900 mb-1">Level 2 - Head Admin</h4>
+                    <p class="text-sm text-neutral-600">Final escalation to head admin</p>
                   </div>
                   <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">Pending</span>
                 </div>
                 <div class="flex items-center gap-2 mt-3">
                   <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">Due: Dec 09, 09:10 AM</span>
                   <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">48 hours</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex flex-col items-center">
-                <div class="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i class="fa-solid fa-user-shield text-neutral-400"></i>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-start justify-between mb-2">
-                  <div>
-                    <h4 class="text-sm text-neutral-900 mb-1">Level 3 - Head Admin</h4>
-                    <p class="text-sm text-neutral-600">Final escalation to head admin</p>
-                  </div>
-                  <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">Pending</span>
-                </div>
-                <div class="flex items-center gap-2 mt-3">
-                  <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">Due: Dec 10, 09:10 AM</span>
-                  <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">72 hours</span>
                 </div>
               </div>
             </div>
@@ -4635,7 +4592,7 @@ window.PAGES = {
                 <p class="text-sm text-neutral-900">Level 1 Escalation</p>
                 <span class="text-lg text-neutral-900">24h</span>
               </div>
-              <p class="text-xs text-neutral-500 mb-3">Escalate to: Senior Admin</p>
+              <p class="text-xs text-neutral-500 mb-3">Escalate to: Executive Admin</p>
               <div class="w-full bg-neutral-100 rounded-full h-2">
                 <div class="bg-neutral-800 h-2 rounded-full" style="width: 45%"></div>
               </div>
@@ -4647,17 +4604,6 @@ window.PAGES = {
                 <span class="text-lg text-neutral-900">48h</span>
               </div>
               <p class="text-xs text-neutral-500 mb-3">Escalate to: Head Admin</p>
-              <div class="w-full bg-neutral-100 rounded-full h-2">
-                <div class="bg-neutral-200 h-2 rounded-full" style="width: 0%"></div>
-              </div>
-              <p class="text-xs text-neutral-500 mt-2">Not triggered yet</p>
-            </div>
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-3">
-                <p class="text-sm text-neutral-900">Level 3 Escalation</p>
-                <span class="text-lg text-neutral-900">72h</span>
-              </div>
-              <p class="text-xs text-neutral-500 mb-3">Escalate to: Executive Admin</p>
               <div class="w-full bg-neutral-100 rounded-full h-2">
                 <div class="bg-neutral-200 h-2 rounded-full" style="width: 0%"></div>
               </div>
@@ -5665,6 +5611,8 @@ window.PAGES = {
                   <p class="text-xs text-neutral-500">PDF • 1.2 MB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
                     class="fa-solid fa-download"></i>
+              </button><button class="text-neutral-600 hover:text-red-600"><i
+                    class="fa-solid fa-trash"></i>
               </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
@@ -5676,6 +5624,8 @@ window.PAGES = {
                   <p class="text-xs text-neutral-500">PDF • 856 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
                     class="fa-solid fa-download"></i>
+              </button><button class="text-neutral-600 hover:text-red-600"><i
+                    class="fa-solid fa-trash"></i>
               </button></div>
               <div
                 class="flex items-center gap-3 p-3 border border-neutral-200 rounded-lg">
@@ -5687,6 +5637,8 @@ window.PAGES = {
                   <p class="text-xs text-neutral-500">PDF • 645 KB</p>
                 </div><button class="text-neutral-600 hover:text-neutral-900"><i
                     class="fa-solid fa-download"></i>
+              </button><button class="text-neutral-600 hover:text-red-600"><i
+                    class="fa-solid fa-trash"></i>
               </button></div>
             </div><button
               class="w-full mt-4 px-4 py-2 border border-neutral-300 rounded-lg text-sm hover:bg-neutral-50 flex items-center justify-center gap-2"><i
@@ -6021,7 +5973,7 @@ window.PAGES = {
               </tr>
             </thead>
             <tbody class="divide-y divide-neutral-200">
-              <tr class="hover:bg-neutral-50">
+              <tr class="bg-blue-50 hover:bg-blue-100">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-2"><input type="checkbox"
                       class="w-4 h-4 border-neutral-300 rounded"><span
@@ -9036,7 +8988,6 @@ window.PAGES = {
                   <td class="px-6 py-4">
                     <div class="flex flex-wrap gap-1">
                       <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Head Admin</span>
-                      <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Resident</span>
                     </div>
                   </td>
                   <td class="px-6 py-4">
@@ -9089,7 +9040,6 @@ window.PAGES = {
                   </td>
                   <td class="px-6 py-4">
                     <div class="flex flex-wrap gap-1">
-                      <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Senior Admin</span>
                       <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Treasurer</span>
                     </div>
                   </td>
@@ -9395,7 +9345,7 @@ window.PAGES = {
                 </div>
                 <div>
                   <p class="text-xs text-neutral-600 mb-1">Escalate To:</p>
-                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Senior Admin</span>
+                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Executive Admin</span>
                 </div>
               </div>
             </div>
@@ -9406,7 +9356,7 @@ window.PAGES = {
                 </div>
                 <div>
                   <p class="text-sm text-neutral-900">Level 2 Escalation</p>
-                  <p class="text-xs text-neutral-500">Second escalation tier</p>
+                  <p class="text-xs text-neutral-500">Final escalation tier</p>
                 </div>
               </div>
               <div class="space-y-3">
@@ -9417,27 +9367,6 @@ window.PAGES = {
                 <div>
                   <p class="text-xs text-neutral-600 mb-1">Escalate To:</p>
                   <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Head Admin</span>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <span class="text-sm text-neutral-900">L3</span>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">Level 3 Escalation</p>
-                  <p class="text-xs text-neutral-500">Final escalation tier</p>
-                </div>
-              </div>
-              <div class="space-y-3">
-                <div>
-                  <p class="text-xs text-neutral-600 mb-1">SLA Time:</p>
-                  <p class="text-sm text-neutral-900">72 hours</p>
-                </div>
-                <div>
-                  <p class="text-xs text-neutral-600 mb-1">Escalate To:</p>
-                  <span class="px-2 py-1 bg-neutral-100 text-neutral-900 text-xs rounded">Executive Admin</span>
                 </div>
               </div>
             </div>
