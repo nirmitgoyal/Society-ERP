@@ -4174,7 +4174,7 @@ window.PAGES = {
               </tr>
             </thead>
             <tbody class="divide-y divide-neutral-200">
-              <tr class="hover:bg-neutral-50">
+              <tr class="bg-blue-50 hover:bg-blue-100">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-2">
                     <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
@@ -5070,7 +5070,7 @@ window.PAGES = {
               </tr>
             </thead>
             <tbody class="divide-y divide-neutral-200">
-              <tr class="hover:bg-neutral-50">
+              <tr class="bg-blue-50 hover:bg-blue-100">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-2"><input type="checkbox"
                       class="w-4 h-4 border-neutral-300 rounded"><span
@@ -8024,7 +8024,7 @@ window.PAGES = {
               </tr>
             </thead>
             <tbody class="divide-y divide-neutral-200">
-              <tr class="hover:bg-neutral-50">
+              <tr class="bg-blue-50 hover:bg-blue-100">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-2">
                     <input type="checkbox" class="w-4 h-4 border-neutral-300 rounded">
