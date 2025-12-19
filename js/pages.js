@@ -2251,77 +2251,9 @@ window.PAGES = {
     title: "Reconciliation",
     subtitle: "Match and reconcile transactions with bank statements.",
     content: `<!-- Triple-Check Totals Section -->
-      <div id="triple-check-totals" class="grid grid-cols-3 gap-6 mb-8">
-        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-building-columns text-white text-2xl"></i>
-            </div>
-            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">Bank</span>
-          </div>
-          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹12,45,500</h3>
-          <p class="text-sm text-neutral-600 font-medium">Total Received in Bank</p>
-          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
-            <i class="fa-solid fa-arrow-trend-up text-neutral-600 text-xs"></i>
-            <span class="text-xs text-neutral-500">219 transactions • Dec 2025</span>
-          </div>
-        </div>
+      
 
-        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-file-invoice-dollar text-white text-2xl"></i>
-            </div>
-            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">Invoices</span>
-          </div>
-          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹11,85,000</h3>
-          <p class="text-sm text-neutral-600 font-medium">Total Paid Invoices</p>
-          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
-            <i class="fa-solid fa-check-circle text-neutral-600 text-xs"></i>
-            <span class="text-xs text-neutral-500">215 invoices settled • Dec 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg border-2 border-neutral-300 p-6 shadow-sm">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-cloud-arrow-up text-white text-2xl"></i>
-            </div>
-            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded-full">SAP</span>
-          </div>
-          <h3 class="text-3xl font-semibold text-neutral-900 mb-1">₹11,25,000</h3>
-          <p class="text-sm text-neutral-600 font-medium">Total Synced with SAP</p>
-          <div class="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200">
-            <i class="fa-solid fa-sync text-neutral-600 text-xs"></i>
-            <span class="text-xs text-neutral-500">210 entries synced • Last: Jan 2, 2026</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Variance Alert Bar -->
-      <div id="variance-alert" class="bg-neutral-100 border border-neutral-300 rounded-lg p-4 mb-8">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-neutral-200 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-scale-balanced text-neutral-600 text-lg"></i>
-            </div>
-            <div>
-              <p class="text-sm font-medium text-neutral-900">Triple-Check Variance Summary</p>
-              <p class="text-xs text-neutral-600 mt-1">
-                Bank vs Invoices: <span class="font-medium">₹60,500</span> (4 pending) • 
-                Invoices vs SAP: <span class="font-medium">₹60,000</span> (5 unsynced) • 
-                Bank vs SAP: <span class="font-medium">₹1,20,500</span>
-              </p>
-            </div>
-          </div>
-          <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
-            <i class="fa-solid fa-magnifying-glass-chart"></i>
-            <span>Investigate Variances</span>
-          </button>
-        </div>
-      </div>
-
-      <div id="stats-section" class="grid grid-cols-4 gap-6 mb-8">
+      <div id="stats-section" class="grid grid-cols-3 gap-6 mb-8">
         <div class="bg-white rounded-lg border border-neutral-200 p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
@@ -2356,18 +2288,6 @@ window.PAGES = {
           <p class="text-sm text-neutral-500">Bank Account</p>
           <p class="text-xs text-neutral-400 mt-2">Primary account</p>
         </div>
-
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-sync text-neutral-600 text-xl"></i>
-            </div>
-            <span class="text-xs text-white bg-neutral-800 px-2 py-1 rounded">Synced</span>
-          </div>
-          <h3 class="text-2xl text-neutral-900 mb-1">SAP</h3>
-          <p class="text-sm text-neutral-500">Integration Status</p>
-          <p class="text-xs text-neutral-400 mt-2">Last sync: Jan 2, 2026</p>
-        </div>
       </div>
 
       <div id="reconciliation-header" class="bg-white rounded-lg border border-neutral-200 p-6 mb-6">
@@ -2388,12 +2308,6 @@ window.PAGES = {
                 <span class="text-sm text-neutral-600">Imported: Jan 2, 2026 02:00 AM</span>
               </div>
             </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <button class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center gap-2">
-              <i class="fa-solid fa-sync"></i>
-              <span>Sync to SAP</span>
-            
           </div>
         </div>
       </div>
@@ -2788,129 +2702,7 @@ window.PAGES = {
         </div>
       </div>
 
-      <div id="sap-integration-section" class="grid grid-cols-2 gap-6 mb-8">
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div class="flex items-center justify-between mb-6">
-            <h3 class="text-lg text-neutral-900">SAP Integration</h3>
-            <span class="text-xs text-white bg-neutral-800 px-3 py-1 rounded">Active</span>
-          </div>
-          <div class="space-y-4">
-            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-check-circle text-neutral-600"></i>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">Reconciliation ID</p>
-                  <p class="text-xs text-neutral-500 mt-1">SAP_RECON_202512</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-clock text-neutral-600"></i>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">Last Sync</p>
-                  <p class="text-xs text-neutral-500 mt-1">Jan 2, 2026 at 02:00 AM</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-database text-neutral-600"></i>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">Records Synced</p>
-                  <p class="text-xs text-neutral-500 mt-1">215 transactions</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-between p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-server text-neutral-600"></i>
-                </div>
-                <div>
-                  <p class="text-sm text-neutral-900">Connection Status</p>
-                  <p class="text-xs text-neutral-500 mt-1">Connected to SAP ERP</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="w-full mt-6 px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800 flex items-center justify-center gap-2">
-            <i class="fa-solid fa-sync"></i>
-            <span>Sync Now</span>
-          
-        </div>
-
-        <div class="bg-white rounded-lg border border-neutral-200 p-6">
-          <div class="flex items-center justify-between mb-6">
-            <h3 class="text-lg text-neutral-900">Reconciliation Rules</h3>
-            <button class="text-sm text-neutral-600 hover:text-neutral-900 flex items-center gap-1">
-              <i class="fa-solid fa-gear text-xs"></i>
-              <span>Configure</span>
-            
-          </div>
-
-          <div class="space-y-4">
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-2">
-                <p class="text-sm text-neutral-900">Auto-match by Reference</p>
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" checked class="sr-only peer">
-                  <div class="w-11 h-6 bg-neutral-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
-                </label>
-              </div>
-              <p class="text-xs text-neutral-500">Match transactions using reference numbers</p>
-            </div>
-
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-2">
-                <p class="text-sm text-neutral-900">Amount Tolerance</p>
-                <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">± ₹50</span>
-              </div>
-              <p class="text-xs text-neutral-500">Allow minor amount variations</p>
-            </div>
-
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-2">
-                <p class="text-sm text-neutral-900">Date Range Matching</p>
-                <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">± 2 days</span>
-              </div>
-              <p class="text-xs text-neutral-500">Match transactions within date range</p>
-            </div>
-
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-2">
-                <p class="text-sm text-neutral-900">Auto-assign Exceptions</p>
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" checked class="sr-only peer">
-                  <div class="w-11 h-6 bg-neutral-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
-                </label>
-              </div>
-              <p class="text-xs text-neutral-500">Automatically assign to senior admins</p>
-            </div>
-
-            <div class="p-4 border border-neutral-200 rounded-lg">
-              <div class="flex items-center justify-between mb-2">
-                <p class="text-sm text-neutral-900">Email Notifications</p>
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" checked class="sr-only peer">
-                  <div class="w-11 h-6 bg-neutral-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
-                </label>
-              </div>
-              <p class="text-xs text-neutral-500">Notify admins of new exceptions</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div id="activity-section" class="bg-white rounded-lg border border-neutral-200 p-6 mb-8">
         <div class="flex items-center justify-between mb-6">
@@ -2941,17 +2733,6 @@ window.PAGES = {
               <p class="text-sm text-neutral-900 mb-1">Bank statement imported</p>
               <p class="text-xs text-neutral-500">BANK_STMT_2025_12 processed successfully</p>
               <p class="text-xs text-neutral-400 mt-2">5 hours ago</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4 pb-4 border-b border-neutral-100">
-            <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-sync text-neutral-600"></i>
-            </div>
-            <div class="flex-1">
-              <p class="text-sm text-neutral-900 mb-1">SAP synchronization completed</p>
-              <p class="text-xs text-neutral-500">215 transactions synced to SAP_RECON_202512</p>
-              <p class="text-xs text-neutral-400 mt-2">8 hours ago</p>
             </div>
           </div>
 
@@ -9171,16 +8952,6 @@ window.PAGES = {
               <p class="text-sm text-neutral-900 mb-1">Contact details updated for Asha Verma (F-101)</p>
               <p class="text-xs text-neutral-500">Email and phone number updated in both ERP and SAP systems</p>
               <p class="text-xs text-neutral-400 mt-2">Today at 11:30 AM • By Priya Sharma</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
-            <div class="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-sync text-neutral-600"></i>
-            </div>
-            <div class="flex-1">
-              <p class="text-sm text-neutral-900 mb-1">SAP synchronization completed successfully</p>
-              <p class="text-xs text-neutral-500">236 resident records synced with SAP ERP system</p>
-              <p class="text-xs text-neutral-400 mt-2">Today at 9:00 AM • Automated Process</p>
             </div>
           </div>
           <div class="flex items-start gap-4 p-4 border border-neutral-200 rounded-lg">
